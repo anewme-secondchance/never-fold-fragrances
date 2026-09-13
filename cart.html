@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Your Cart | Never Fold Fragrances</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="top-header">
+
+        <a
+            href="index.html"
+            class="back-button"
+            aria-label="Continue shopping"
+        >
+            ‹
+        </a>
+
+
+        <div class="brand-name">
+
+            <strong>NEVER FOLD</strong>
+
+            <span>FRAGRANCES</span>
+
+        </div>
+
+
+        <div
+            class="cart-button cart-button-current"
+            aria-label="Shopping cart"
+        >
+
+            🛒
+
+            <span
+                class="cart-count"
+                id="cartCount"
+            >
+                0
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         CART PAGE
+    ========================================= -->
+
+    <main class="cart-page">
+
+
+        <!-- ====================================
+             CART HERO
+        ===================================== -->
+
+        <section class="cart-hero">
+
+            <span class="cart-small-title">
+                NEVER FOLD FRAGRANCES
+            </span>
+
+
+            <h1>
+                YOUR
+                <span>CART</span>
+            </h1>
+
+
+            <p>
+                Review your items, quantities,
+                and order total before checkout.
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CART ITEMS
+        ========================================= -->
+
+        <section class="cart-items-section">
+
+
+            <div class="cart-section-heading">
+
+                <h2>
+                    YOUR ITEMS
+                </h2>
+
+
+                <span id="cartItemCount">
+                    0 ITEMS
+                </span>
+
+            </div>
+
+
+
+            <!--
+                CART ITEMS WILL BE INSERTED HERE
+                BY script.js
+
+                LOCKED PRODUCT PRICES:
+
+                Never Fold Original Bottle = $30
+                Never Fold Original Refill = $20
+                Scent Vault Item = $70
+
+                EACH ITEM WILL STORE:
+
+                Product Name
+                Product Type
+                Unit Price
+                Quantity
+
+                LINE TOTAL =
+                UNIT PRICE × QUANTITY
+            -->
+
+            <div
+                class="cart-items"
+                id="cartItems"
+            >
+            </div>
+
+
+
+            <!-- ====================================
+                 EMPTY CART
+            ===================================== -->
+
+            <div
+                class="empty-cart"
+                id="emptyCart"
+            >
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+
+                <h2>
+                    YOUR CART IS EMPTY
+                </h2>
+
+
+                <p>
+                    Find your fragrance and
+                    add it to your cart.
+                </p>
+
+
+                <a
+                    href="scents.html"
+                    class="empty-cart-shop"
+                >
+                    SHOP NEVER FOLD
+                </a>
+
+
+                <a
+                    href="vault.html"
+                    class="empty-cart-vault"
+                >
+                    ENTER THE SCENT VAULT
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             ORDER SUMMARY
+        ========================================= -->
+
+        <section
+            class="cart-summary"
+            id="cartSummary"
+        >
+
+
+            <div class="cart-summary-heading">
+
+                <span>
+                    ORDER
+                </span>
+
+                <h2>
+                    SUMMARY
+                </h2>
+
+            </div>
+
+
+
+            <!-- ====================================
+                 SUBTOTAL
+            ===================================== -->
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+
+                <strong id="cartSubtotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+
+
+            <!-- ====================================
+                 SHIPPING
+                 TEMPORARY FLAT RATE = $6.99
+            ===================================== -->
+
+            <div class="summary-row">
+
+                <div>
+
+                    <span>
+                        Shipping
+                    </span>
+
+                    <small>
+                        Flat Rate
+                    </small>
+
+                </div>
+
+
+                <strong
+                    id="cartShipping"
+                    data-shipping="6.99"
+                >
+                    $6.99
+                </strong>
+
+            </div>
+
+
+
+            <!-- ====================================
+                 TAX
+            ===================================== -->
+
+            <div class="summary-row">
+
+                <span>
+                    Tax
+                </span>
+
+
+                <strong id="cartTax">
+                    Calculated at checkout
+                </strong>
+
+            </div>
+
+
+
+            <!-- ====================================
+                 TOTAL BEFORE TAX
+
+                 CALCULATION:
+
+                 SUBTOTAL + $6.99 SHIPPING
+            ===================================== -->
+
+            <div class="summary-total-row">
+
+
+                <div>
+
+                    <span>
+                        ORDER TOTAL
+                    </span>
+
+
+                    <small>
+                        Subtotal + $6.99 shipping
+                        before tax
+                    </small>
+
+                </div>
+
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+
+            </div>
+
+
+
+            <!-- ====================================
+                 CHECKOUT BUTTON
+            ===================================== -->
+
+            <a
+                href="checkout.html"
+                class="checkout-button"
+                id="checkoutButton"
+            >
+
+                <span>
+                    PROCEED TO CHECKOUT
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+
+            <!-- ====================================
+                 CONTINUE SHOPPING
+            ===================================== -->
+
+            <a
+                href="scents.html"
+                class="continue-shopping"
+            >
+                ← CONTINUE SHOPPING
+            </a>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             PRICE GUIDE
+        ========================================= -->
+
+        <section class="cart-price-guide">
+
+
+            <span class="price-guide-small">
+                NEVER FOLD PRICING
+            </span>
+
+
+            <h2>
+                KNOW YOUR ORDER
+            </h2>
+
+
+
+            <!-- ORIGINAL BOTTLE -->
+
+            <div class="price-guide-row">
+
+                <div>
+
+                    <strong>
+                        NEVER FOLD ORIGINAL
+                    </strong>
+
+                    <span>
+                        Full Bottle
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    $30
+                </strong>
+
+            </div>
+
+
+
+            <!-- REFILL -->
+
+            <div class="price-guide-row">
+
+                <div>
+
+                    <strong>
+                        NEVER FOLD REFILL
+                    </strong>
+
+                    <span>
+                        Never Fold Originals Only
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    $20
+                </strong>
+
+            </div>
+
+
+
+            <!-- VAULT -->
+
+            <div class="price-guide-row">
+
+                <div>
+
+                    <strong>
+                        THE SCENT VAULT
+                    </strong>
+
+                    <span>
+                        Vault Selection
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    $70
+                </strong>
+
+            </div>
+
+
+
+            <!-- SHIPPING -->
+
+            <div class="price-guide-row">
+
+                <div>
+
+                    <strong>
+                        SHIPPING
+                    </strong>
+
+                    <span>
+                        Temporary Flat Rate
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    $6.99
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             CART CALCULATION INFORMATION
+        ========================================= -->
+
+        <section class="cart-calculation-info">
+
+
+            <span>
+                HOW YOUR TOTAL IS CALCULATED
+            </span>
+
+
+            <h2>
+                SIMPLE. CLEAR. CORRECT.
+            </h2>
+
+
+            <div class="calculation-line">
+
+                <span>
+                    Item Price
+                </span>
+
+                <span>
+                    ×
+                </span>
+
+                <span>
+                    Quantity
+                </span>
+
+                <span>
+                    =
+                </span>
+
+                <strong>
+                    Item Total
+                </strong>
+
+            </div>
+
+
+            <div class="calculation-line">
+
+                <span>
+                    Merchandise Subtotal
+                </span>
+
+                <span>
+                    +
+                </span>
+
+                <span>
+                    $6.99 Shipping
+                </span>
+
+                <span>
+                    =
+                </span>
+
+                <strong>
+                    Order Total Before Tax
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             CONTACT
+        ========================================= -->
+
+        <section class="cart-contact">
+
+
+            <span>
+                NEED HELP WITH YOUR ORDER?
+            </span>
+
+
+            <h2>
+                CONTACT MARDY
+            </h2>
+
+
+            <strong>
+                De’Mardia Goss
+            </strong>
+
+
+            <a href="tel:+14303443528">
+                (430) 344-3528
+            </a>
+
+
+            <p>
+                Facebook: Diamond Prince Mardy Goss
+            </p>
+
+
+            <a
+                href="https://neverfoldfragrance.com/"
+                class="cart-website"
+            >
+                neverfoldfragrance.com
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         BOTTOM NAVIGATION
+    ========================================= -->
+
+    <nav class="bottom-nav">
+
+
+        <!-- HOME -->
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+
+        <!-- SCENTS -->
+
+        <a
+            href="scents.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+
+        </a>
+
+
+
+        <!-- VAULT -->
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+
+        </a>
+
+
+
+        <!-- REFILLS -->
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ↻
+            </span>
+
+            <span>
+                Refill
+            </span>
+
+        </a>
+
+
+
+        <!-- CONTACT -->
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+
+<!-- ========================================
+     JAVASCRIPT
+
+     WE WILL BUILD ONE COMPLETE script.js
+     AFTER ALL HTML + CSS ARE FINISHED.
+========================================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
