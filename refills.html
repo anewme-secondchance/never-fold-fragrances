@@ -1,274 +1,821 @@
-<!-- ========================================
-     SELECT SCENT — ALPHABETICAL A-Z
-========================================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="refill-order-section">
+<head>
+    <meta charset="UTF-8">
 
-    <div class="refill-section-heading">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-        <span>
-            STEP 1
-        </span>
+    <meta name="theme-color" content="#02070d">
 
-        <h2>
-            CHOOSE YOUR SCENT
-        </h2>
+    <title>
+        Refills | Never Fold Fragrances
+    </title>
 
-    </div>
-
-
-    <div class="refill-scent-list">
-
-
-        <!-- AMIRAH'S TOUCH -->
-
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Amirah's Touch"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Amirah's Touch
-            </strong>
-
-            <span class="refill-option-price">
-                $20
-            </span>
-
-        </label>
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+</head>
 
 
+<body>
 
-        <!-- BENITA'S LOVE -->
+<div class="app refill-app">
 
-        <label class="refill-scent-option">
 
-            <input
-                type="radio"
-                name="refillScent"
-                value="Benita's Love"
-                data-price="20"
-            >
+    <!-- =========================================
+         SMOKE EFFECTS
+         CSS WILL STYLE THESE
+    ========================================== -->
 
-            <span class="refill-radio"></span>
+    <div
+        class="smoke smoke-blue smoke-blue-one"
+        aria-hidden="true"
+    ></div>
 
-            <strong>
-                Benita's Love
-            </strong>
+    <div
+        class="smoke smoke-blue smoke-blue-two"
+        aria-hidden="true"
+    ></div>
 
-            <span class="refill-option-price">
-                $20
-            </span>
+    <div
+        class="smoke smoke-gold smoke-gold-one"
+        aria-hidden="true"
+    ></div>
 
-        </label>
+    <div
+        class="smoke smoke-green smoke-green-one"
+        aria-hidden="true"
+    ></div>
 
 
 
-        <!-- EVETTE MY LOVE -->
+    <!-- =========================================
+         HEADER
+    ========================================== -->
 
-        <label class="refill-scent-option">
+    <header class="top-header">
 
-            <input
-                type="radio"
-                name="refillScent"
-                value="Evette My Love"
-                data-price="20"
-            >
+        <a
+            href="index.html"
+            class="back-button"
+            aria-label="Back to home"
+        >
+            ‹
+        </a>
 
-            <span class="refill-radio"></span>
+
+        <div class="brand-name">
 
             <strong>
-                Evette My Love
+                NEVER FOLD
             </strong>
 
-            <span class="refill-option-price">
-                $20
+            <span>
+                FRAGRANCES
             </span>
 
-        </label>
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+
+            🛒
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </header>
 
 
 
-        <!-- IRISH THE LAND -->
+    <!-- =========================================
+         REFILL PAGE
+    ========================================== -->
 
-        <label class="refill-scent-option">
+    <main class="refill-page">
 
-            <input
-                type="radio"
-                name="refillScent"
-                value="Irish The Land"
-                data-price="20"
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="refill-hero">
+
+
+            <p class="refill-small-title">
+                NEVER FOLD FRAGRANCES
+            </p>
+
+
+            <h1 class="graffiti-text">
+                REFILLS
+            </h1>
+
+
+            <p class="refill-tagline">
+                Same Scent. Lower Cost.
+                <br>
+                <strong>Keep It Going.</strong>
+            </p>
+
+
+
+            <!-- =================================
+                 REFILL BOTTLE MOCK-UPS
+                 CSS WILL TURN THESE INTO THE
+                 BLUE / GOLD / BLACK BOTTLES
+                 LIKE MOCK-UP #8
+            ================================== -->
+
+            <div class="refill-bottle-display">
+
+
+                <div class="refill-smoke"></div>
+
+
+                <div class="refill-bottle refill-bottle-left">
+
+                    <div class="refill-sprayer"></div>
+
+                    <div class="refill-bottle-body">
+
+                        <span>NF</span>
+
+                        <small>
+                            NEVER FOLD
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="refill-bottle refill-bottle-main">
+
+                    <div class="refill-sprayer"></div>
+
+                    <div class="refill-bottle-body">
+
+                        <span>NF</span>
+
+                        <small>
+                            NEVER FOLD
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="refill-bottle refill-bottle-right">
+
+                    <div class="refill-sprayer"></div>
+
+                    <div class="refill-bottle-body">
+
+                        <span>NF</span>
+
+                        <small>
+                            NEVER FOLD
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 $20 PRICE
+            ================================== -->
+
+            <div class="refill-price-hero">
+
+                <strong>
+                    $20
+                </strong>
+
+                <span>
+                    REFILL
+                </span>
+
+                <small>
+                    NEVER FOLD ORIGINALS ONLY
+                </small>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             REFILL BENEFITS
+        ====================================== -->
+
+        <section class="refill-benefits">
+
+
+            <div>
+                <span>✓</span>
+                <p>Your favorite Never Fold scent</p>
+            </div>
+
+
+            <div>
+                <span>✓</span>
+                <p>Same Never Fold fragrance</p>
+            </div>
+
+
+            <div>
+                <span>✓</span>
+                <p>Only $20 per refill</p>
+            </div>
+
+
+            <div>
+                <span>✓</span>
+                <p>Keep your scent going</p>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             CHOOSE YOUR SCENT
+        ====================================== -->
+
+        <section class="refill-order-section">
+
+
+            <div class="refill-section-heading">
+
+                <span>
+                    STEP 1
+                </span>
+
+                <h2 class="graffiti-text">
+                    CHOOSE YOUR SCENT
+                </h2>
+
+            </div>
+
+
+
+            <div class="refill-scent-list">
+
+
+                <!-- 1 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Amirah's Touch"
+                        data-name="Amirah's Touch"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Amirah's Touch
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 2 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Benita's Love"
+                        data-name="Benita's Love"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Benita's Love
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 3 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Evette My Love"
+                        data-name="Evette My Love"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Evette My Love
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 4 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Irish The Land"
+                        data-name="Irish The Land"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Irish The Land
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 5 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="King Mardy The Great"
+                        data-name="King Mardy The Great"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        King Mardy The Great
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 6 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Lilly of Da Valley"
+                        data-name="Lilly of Da Valley"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Lilly of Da Valley
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 7 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Man of the Hour"
+                        data-name="Man of the Hour"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Man of the Hour
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 8 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Nieko Valley"
+                        data-name="Nieko Valley"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Nieko Valley
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 9 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Players Get Choose"
+                        data-name="Players Get Choose"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Players Get Choose
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+
+                <!-- 10 -->
+
+                <label class="refill-scent-option">
+
+                    <input
+                        type="radio"
+                        name="refillScent"
+                        value="Queen Gwen"
+                        data-name="Queen Gwen"
+                    >
+
+                    <span class="refill-radio"></span>
+
+                    <strong>
+                        Queen Gwen
+                    </strong>
+
+                    <span class="refill-check">
+                        ✓
+                    </span>
+
+                </label>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             QUANTITY
+        ====================================== -->
+
+        <section class="refill-quantity-section">
+
+
+            <div class="refill-section-heading">
+
+                <span>
+                    STEP 2
+                </span>
+
+                <h2>
+                    QUANTITY
+                </h2>
+
+            </div>
+
+
+
+            <div class="refill-quantity">
+
+
+                <button
+                    type="button"
+                    class="refill-minus"
+                    data-action="refill-minus"
+                    aria-label="Decrease refill quantity"
+                >
+                    −
+                </button>
+
+
+                <span
+                    id="refillQuantity"
+                    class="refill-quantity-number"
+                    data-refill-quantity
+                >
+                    1
+                </span>
+
+
+                <button
+                    type="button"
+                    class="refill-plus"
+                    data-action="refill-plus"
+                    aria-label="Increase refill quantity"
+                >
+                    +
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             TOTAL
+        ====================================== -->
+
+        <section class="refill-total-section">
+
+
+            <span>
+                REFILL TOTAL
+            </span>
+
+
+            <strong
+                id="refillTotal"
+                data-refill-total
+            >
+                $20.00
+            </strong>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             ADD REFILL TO CART
+        ====================================== -->
+
+        <button
+            type="button"
+            id="addRefillToCart"
+            class="refill-add-cart"
+            data-action="add-refill"
+        >
+
+            <span>
+                ADD REFILL TO CART
+            </span>
+
+            <span>
+                🛒
+            </span>
+
+        </button>
+
+
+
+        <!-- =====================================
+             NEW BOTTLE
+        ====================================== -->
+
+        <section class="refill-new-bottle">
+
+            <p>
+                Need a new bottle instead?
+            </p>
+
+
+            <a
+                href="scents.html"
+                class="refill-shop-new"
+            >
+                SHOP $30 BOTTLES
+                <span>›</span>
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTACT MARDY
+             SAME ON EVERY PAGE
+        ====================================== -->
+
+        <section class="home-contact-section">
+
+            <p class="home-contact-question">
+                QUESTIONS?
+            </p>
+
+
+            <a
+                href="contact.html"
+                class="home-contact-button"
             >
 
-            <span class="refill-radio"></span>
+                <span class="home-contact-icon">
+                    ☎
+                </span>
 
-            <strong>
-                Irish The Land
-            </strong>
+                <strong>
+                    CONTACT MARDY
+                </strong>
 
-            <span class="refill-option-price">
-                $20
+                <span class="home-contact-arrow">
+                    ›
+                </span>
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         BOTTOM NAVIGATION
+    ========================================== -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ⌂
             </span>
 
-        </label>
-
-
-
-        <!-- KING MARDY THE GREAT -->
-
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="King Mardy The Great"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                King Mardy The Great
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span>
+                Home
             </span>
 
-        </label>
+        </a>
 
 
 
-        <!-- LILLY OF DA VALLEY -->
+        <a
+            href="scents.html"
+            class="nav-item"
+        >
 
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Lilly of Da Valley"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Lilly of Da Valley
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span class="nav-icon">
+                ♙
             </span>
 
-        </label>
-
-
-
-        <!-- MAN OF THE HOUR -->
-
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Man of the Hour"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Man of the Hour
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span>
+                Scents
             </span>
 
-        </label>
+        </a>
 
 
 
-        <!-- NIEKO VALLEY -->
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
 
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Nieko Valley"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Nieko Valley
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span class="nav-icon">
+                ◇
             </span>
 
-        </label>
-
-
-
-        <!-- PLAYERS GET CHOOSE -->
-
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Players Get Choose"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Players Get Choose
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span>
+                Vault
             </span>
 
-        </label>
+        </a>
 
 
 
-        <!-- QUEEN GWEN -->
+        <a
+            href="refills.html"
+            class="nav-item active"
+        >
 
-        <label class="refill-scent-option">
-
-            <input
-                type="radio"
-                name="refillScent"
-                value="Queen Gwen"
-                data-price="20"
-            >
-
-            <span class="refill-radio"></span>
-
-            <strong>
-                Queen Gwen
-            </strong>
-
-            <span class="refill-option-price">
-                $20
+            <span class="nav-icon">
+                ♙
             </span>
 
-        </label>
+            <span>
+                Refill
+            </span>
+
+        </a>
 
 
-    </div>
 
-</section>
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+
+<!-- =========================================
+     KEEP EXISTING JAVASCRIPT
+     $20 x QUANTITY LOGIC STAYS
+========================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
