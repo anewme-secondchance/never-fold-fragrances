@@ -5085,3 +5085,18 @@ button:disabled,
     top: 0px;      /* + moves DOWN, - moves UP */
 }
 }
+
+.product-fragrance-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    position: relative;
+    z-index: 3;
+
+    margin: 0 auto;
+}
