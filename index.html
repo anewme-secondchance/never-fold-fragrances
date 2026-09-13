@@ -9,16 +9,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta name="theme-color" content="#02070d">
+    <meta name="theme-color" content="#02060c">
 
-    <title>
-        Never Fold Fragrances
-    </title>
+    <title>Never Fold Fragrances</title>
 
-    <link
-        rel="stylesheet"
-        href="styles.css"
-    >
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -28,42 +23,15 @@
 
 
     <!-- =========================================
-         BACKGROUND EFFECTS
-         CSS WILL CREATE THE SMOKE
-    ========================================== -->
-
-    <div
-        class="smoke smoke-blue smoke-blue-one"
-        aria-hidden="true"
-    ></div>
-
-    <div
-        class="smoke smoke-blue smoke-blue-two"
-        aria-hidden="true"
-    ></div>
-
-    <div
-        class="smoke smoke-gold smoke-gold-one"
-        aria-hidden="true"
-    ></div>
-
-    <div
-        class="smoke smoke-green smoke-green-one"
-        aria-hidden="true"
-    ></div>
-
-
-
-    <!-- =========================================
          HEADER
     ========================================== -->
 
-    <header class="top-header home-header">
+    <header class="top-header">
 
         <button
             type="button"
             class="menu-button"
-            aria-label="Open menu"
+            aria-label="Menu"
         >
             ☰
         </button>
@@ -71,13 +39,9 @@
 
         <div class="brand-name">
 
-            <strong>
-                NEVER FOLD
-            </strong>
+            <strong>NEVER FOLD</strong>
 
-            <span>
-                FRAGRANCES
-            </span>
+            <span>FRAGRANCES</span>
 
         </div>
 
@@ -87,24 +51,14 @@
             class="cart-button"
             aria-label="Shopping cart"
         >
+            🛒
 
-            <span class="cart-icon">
-                🛒
-            </span>
-
-            <span class="cart-count">
-                0
-            </span>
-
+            <span class="cart-count">0</span>
         </a>
 
     </header>
 
 
-
-    <!-- =========================================
-         HOME
-    ========================================== -->
 
     <main class="home-page">
 
@@ -113,72 +67,86 @@
              HERO
         ====================================== -->
 
-        <section class="home-hero">
+        <section class="nf-home-hero">
 
 
-            <div class="home-logo-wrap">
+            <!-- BLUE SMOKE -->
 
-                <div
-                    class="hero-smoke hero-smoke-blue"
-                    aria-hidden="true"
-                ></div>
+            <div
+                class="nf-smoke nf-smoke-blue-1"
+                aria-hidden="true"
+            ></div>
 
-                <div
-                    class="hero-smoke hero-smoke-gold"
-                    aria-hidden="true"
-                ></div>
+            <div
+                class="nf-smoke nf-smoke-blue-2"
+                aria-hidden="true"
+            ></div>
 
-                <div
-                    class="hero-smoke hero-smoke-green"
-                    aria-hidden="true"
-                ></div>
 
+            <!-- GRAY / WHITE SMOKE -->
+
+            <div
+                class="nf-smoke nf-smoke-gray-1"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="nf-smoke nf-smoke-gray-2"
+                aria-hidden="true"
+            ></div>
+
+
+
+            <!-- REAL NEVER FOLD LOGO
+                 BLENDED INTO BACKGROUND -->
+
+            <div class="nf-background-logo">
 
                 <img
                     src="images/img_NFlogo.jpg"
-                    alt="Never Fold Fragrances NF logo"
-                    class="home-logo"
+                    alt="Never Fold"
                 >
 
             </div>
 
 
 
-            <div class="home-brand-message">
+            <!-- TOP BRAND -->
 
-                <h1 class="home-main-title">
+            <div class="nf-hero-brand">
 
-                    <span>
-                        NEVER FOLD
-                    </span>
+                <span>NEVER FOLD</span>
 
-                    <small>
-                        FRAGRANCES
-                    </small>
-
-                </h1>
-
-
-                <p class="home-tagline graffiti-text">
-
-                    WEAR IT.
-                    <br>
-
-                    SPRAY IT.
-                    <br>
-
-                    <strong>
-                        NEVER FOLD.
-                    </strong>
-
-                </p>
-
-
-                <p class="home-intro">
-                    Find the scent that matches your energy.
-                </p>
+                <small>FRAGRANCES</small>
 
             </div>
+
+
+
+            <!-- MAIN HERO COPY -->
+
+            <div class="nf-hero-copy">
+
+                <p>
+                    MORE THAN A SCENT
+                </p>
+
+                <strong>
+                    IT'S A LIFESTYLE
+                </strong>
+
+            </div>
+
+
+
+            <!-- HANDLE -->
+
+            <div class="nf-home-handle">
+
+                @mardygoss
+
+            </div>
+
 
         </section>
 
@@ -188,134 +156,158 @@
              MAIN ACTIONS
         ====================================== -->
 
-        <section
-            class="home-actions"
-            aria-label="Never Fold menu"
-        >
+<!-- =====================================
+     MAIN ACTIONS
+====================================== -->
+
+<section class="nf-home-actions">
 
 
-            <!-- SHOP -->
+    <!-- SHOP SCENTS -->
 
-            <a
-                href="scents.html"
-                class="home-action-card action-shop"
-            >
+    <a href="scents.html" class="nf-bottle-card">
 
-                <span class="home-action-icon">
-                    🛍️
-                </span>
+        <div class="nf-mini-bottle">
 
-                <span class="home-action-small">
-                    SHOP
-                </span>
+            <div class="nf-mini-cap"></div>
 
-                <strong>
-                    NEVER FOLD
-                    <br>
-                    SCENTS
-                </strong>
+            <div class="nf-mini-glass">
 
-            </a>
+                <span class="nf-mini-logo">NF</span>
 
+                <strong>SHOP</strong>
 
+                <small>SCENTS</small>
 
-            <!-- FIND YOUR SCENT -->
+            </div>
 
-            <a
-                href="finder.html"
-                class="home-action-card action-finder"
-            >
+        </div>
 
-                <span class="home-action-icon">
-                    🔎
-                </span>
+        <div class="nf-bottle-text">
 
-                <span class="home-action-small">
-                    WHAT'S YOUR FOLD?
-                </span>
+            <strong>SHOP NEVER FOLD SCENTS</strong>
 
-                <strong>
-                    FIND YOUR
-                    <br>
-                    SCENT
-                </strong>
+            <small>$30 ORIGINAL FRAGRANCES</small>
 
-            </a>
+        </div>
+
+    </a>
 
 
 
-            <!-- VAULT -->
+    <!-- FIND YOUR SCENT -->
 
-            <a
-                href="vault.html"
-                class="home-action-card action-vault"
-            >
+    <a href="finder.html" class="nf-bottle-card">
 
-                <span class="home-action-icon">
-                    💎
-                </span>
+        <div class="nf-mini-bottle">
 
-                <span class="home-action-small">
-                    EXPLORE
-                </span>
+            <div class="nf-mini-cap"></div>
 
-                <strong>
-                    THE SCENT
-                    <br>
-                    VAULT
-                </strong>
+            <div class="nf-mini-glass">
 
-            </a>
+                <span class="nf-mini-logo">NF</span>
+
+                <strong>FIND</strong>
+
+                <small>YOUR SCENT</small>
+
+            </div>
+
+        </div>
+
+        <div class="nf-bottle-text">
+
+            <strong>FIND YOUR SCENT</strong>
+
+            <small>FIND YOUR PERFECT MATCH</small>
+
+        </div>
+
+    </a>
 
 
 
-            <!-- REFILLS -->
+    <!-- SCENT VAULT -->
 
-            <a
-                href="refills.html"
-                class="home-action-card action-refill"
-            >
+    <a href="vault.html" class="nf-bottle-card">
 
-                <span class="home-action-icon">
-                    🧴
-                </span>
+        <div class="nf-mini-bottle">
 
-                <span class="home-action-small">
-                    KEEP IT GOING
-                </span>
+            <div class="nf-mini-cap"></div>
 
-                <strong>
-                    REFILL
-                    <br>
-                    FOR $20
-                </strong>
+            <div class="nf-mini-glass">
 
-            </a>
+                <span class="nf-mini-logo">NF</span>
 
-        </section>
+                <strong>SCENT</strong>
 
+                <small>VAULT</small>
+
+            </div>
+
+        </div>
+
+        <div class="nf-bottle-text">
+
+            <strong>THE SCENT VAULT</strong>
+
+            <small>EXPLORE THE VAULT</small>
+
+        </div>
+
+    </a>
+
+
+
+    <!-- REFILL -->
+
+    <a href="refills.html" class="nf-bottle-card nf-refill-bottle">
+
+        <div class="nf-mini-bottle">
+
+            <div class="nf-mini-cap"></div>
+
+            <div class="nf-mini-glass">
+
+                <span class="nf-mini-logo">NF</span>
+
+                <strong>$20</strong>
+
+                <small>REFILL</small>
+
+            </div>
+
+        </div>
+
+        <div class="nf-bottle-text">
+
+            <strong>REFILL FOR $20</strong>
+
+            <small>NEVER FOLD ORIGINALS ONLY</small>
+
+        </div>
+
+    </a>
+
+
+</section>
 
 
         <!-- =====================================
-             PERFORMANCE
+             LONGEVITY + USES
+             NO 2–4 DAYS
         ====================================== -->
 
-        <section class="home-performance">
+        <section class="nf-home-info">
 
 
-            <p class="graffiti-text home-performance-title">
-                BUILT TO LAST
-            </p>
+            <div class="nf-info-box nf-info-hours">
 
+                <div class="nf-info-icon">
+                    ◷
+                </div>
 
-            <div class="home-performance-grid">
-
-
-                <div class="home-performance-card performance-gold">
-
-                    <span class="performance-icon">
-                        ◷
-                    </span>
+                <div>
 
                     <strong>
                         4–8 HOURS
@@ -327,45 +319,37 @@
 
                 </div>
 
+            </div>
 
 
-                <div class="home-performance-card performance-blue">
 
-                    <span class="performance-icon">
-                        ♧
-                    </span>
+            <div class="nf-info-box nf-info-uses">
 
-                    <strong>
-                        2–4 DAYS
-                    </strong>
+                <div class="nf-use-icons">
 
-                    <small>
-                        ON CLOTHES
-                    </small>
+                    <span>●</span>
+
+                    <span>🚗</span>
+
+                    <span>⌂</span>
 
                 </div>
 
 
-
-                <div class="home-performance-card performance-green">
-
-                    <div class="use-icons">
-                        <span>👤</span>
-                        <span>🚗</span>
-                        <span>⌂</span>
-                    </div>
+                <div>
 
                     <strong>
-                        3 WAYS TO USE IT
+                        BODY • CAR • HOME
                     </strong>
 
                     <small>
-                        BODY • CAR • HOME
+                        WEAR IT YOUR WAY
                     </small>
 
                 </div>
 
             </div>
+
 
         </section>
 
@@ -375,55 +359,60 @@
              CONTACT MARDY
         ====================================== -->
 
-      <section class="home-contact-section">
+        <section class="nf-home-contact">
 
-    <p class="home-contact-question">
-        QUESTIONS?
-    </p>
-
-    <a
-        href="contact.html"
-        class="home-contact-button"
-    >
-        <span class="home-contact-icon">
-            ☎
-        </span>
-
-        <strong>
-            CONTACT MARDY
-        </strong>
-
-        <span class="home-contact-arrow">
-            ›
-        </span>
-    </a>
-
-</section>
-
-        <!-- =====================================
-             BOTTOM BRAND STATEMENT
-        ====================================== -->
-
-        <section class="home-closing">
-
-            <p class="graffiti-text">
-                NEVER FOLD
+            <p>
+                QUESTIONS?
             </p>
 
-            <span class="stay-scented-text">
-                Stay Scented
-            </span>
 
-            <small>
-                SAME ENERGY. DIFFERENT STORIES.
-            </small>
+            <a
+                href="contact.html"
+                class="nf-contact-button"
+            >
+
+                <span class="nf-contact-icon">
+                    ◯
+                </span>
+
+
+                <strong>
+                    CONTACT MARDY
+                </strong>
+
+
+                <span class="nf-contact-arrow">
+                    ›
+                </span>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CLOSING
+        ====================================== -->
+
+        <section class="nf-home-closing">
+
+            <p class="nf-closing-script">
+                Never Fold
+            </p>
+
+            <strong>
+                WEAR IT. SPRAY IT. NEVER FOLD.
+            </strong>
 
         </section>
 
 
     </main>
 
-
+<div class="powered-by">
+    Powered by <strong>TaDie4ENT</strong> custom elves
+</div>
 
     <!-- =========================================
          BOTTOM NAVIGATION
@@ -489,7 +478,7 @@
         >
 
             <span class="nav-icon">
-                ♙
+                ♢
             </span>
 
             <span>
@@ -522,14 +511,7 @@
 </div>
 
 
-
-<!-- =========================================
-     KEEP EXISTING JAVASCRIPT
-     DO NOT CHANGE CART/CALCULATION LOGIC
-========================================== -->
-
 <script src="script.js"></script>
-
 
 </body>
 
