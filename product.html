@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Never Fold Fragrance</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="top-header">
+
+        <a
+            href="scents.html"
+            class="back-button"
+            aria-label="Back to Never Fold scents"
+        >
+            ‹
+        </a>
+
+
+        <div class="brand-name">
+
+            <strong>NEVER FOLD</strong>
+
+            <span>FRAGRANCES</span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+            🛒
+
+            <span class="cart-count">
+                0
+            </span>
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         PRODUCT PAGE
+    ========================== -->
+
+    <main class="product-page">
+
+
+        <!-- PRODUCT HERO -->
+
+        <section class="product-hero">
+
+
+            <span class="product-collection-label">
+                NEVER FOLD ORIGINAL
+            </span>
+
+
+            <!--
+                JavaScript will change the bottle
+                name/color depending on which
+                fragrance the customer selected.
+            -->
+
+            <div class="product-bottle-stage">
+
+                <div
+                    class="perfume-bottle product-display-bottle"
+                    id="productBottle"
+                >
+
+                    <div class="bottle-cap"></div>
+
+
+                    <div class="bottle-glass">
+
+                        <span class="bottle-nf">
+                            NF
+                        </span>
+
+                        <span
+                            class="bottle-name"
+                            id="bottleName"
+                        >
+                            NEVER FOLD
+                        </span>
+
+                        <small>
+                            FRAGRANCES
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-title-area">
+
+                <p>
+                    NEVER FOLD FRAGRANCES
+                </p>
+
+                <h1 id="productName">
+                    Never Fold Fragrance
+                </h1>
+
+                <span class="product-price">
+                    $30
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCT INFORMATION
+        ========================== -->
+
+        <section class="product-info-card">
+
+            <div class="product-info-heading">
+
+                <span>
+                    THE NEVER FOLD COLLECTION
+                </span>
+
+                <h2>
+                    YOUR SCENT.
+                    YOUR ENERGY.
+                </h2>
+
+            </div>
+
+
+            <p class="product-description">
+
+                A signature fragrance from the
+                Never Fold Collection.
+
+            </p>
+
+
+            <!-- PERFORMANCE -->
+
+            <div class="product-performance">
+
+                <div>
+
+                    <strong>
+                        4–8
+                    </strong>
+
+                    <span>
+                        HOURS
+                    </span>
+
+                    <small>
+                        ON SKIN
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        2–4
+                    </strong>
+
+                    <span>
+                        DAYS
+                    </span>
+
+                    <small>
+                        ON CLOTHES
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             WAYS TO USE
+        ========================== -->
+
+        <section class="product-use-section">
+
+            <div class="section-title">
+
+                <span>
+                    MORE THAN A FRAGRANCE
+                </span>
+
+                <h2>
+                    USE IT YOUR WAY
+                </h2>
+
+            </div>
+
+
+            <div class="use-options">
+
+
+                <div class="use-option">
+
+                    <span class="use-icon">
+                        ✨
+                    </span>
+
+                    <strong>
+                        BODY
+                    </strong>
+
+                    <small>
+                        Wear your scent
+                    </small>
+
+                </div>
+
+
+                <div class="use-option">
+
+                    <span class="use-icon">
+                        🚗
+                    </span>
+
+                    <strong>
+                        CAR
+                    </strong>
+
+                    <small>
+                        Freshen your ride
+                    </small>
+
+                </div>
+
+
+                <div class="use-option">
+
+                    <span class="use-icon">
+                        🏠
+                    </span>
+
+                    <strong>
+                        HOME
+                    </strong>
+
+                    <small>
+                        Freshen your space
+                    </small>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUANTITY
+        ========================== -->
+
+        <section class="purchase-section">
+
+
+            <div class="purchase-heading">
+
+                <div>
+
+                    <span>
+                        NEVER FOLD BOTTLE
+                    </span>
+
+                    <h2>
+                        $30
+                    </h2>
+
+                </div>
+
+
+                <span class="in-stock">
+                    AVAILABLE
+                </span>
+
+            </div>
+
+
+
+            <div class="quantity-row">
+
+                <span>
+                    QUANTITY
+                </span>
+
+
+                <div class="quantity-control">
+
+                    <button
+                        type="button"
+                        class="quantity-button minus"
+                        aria-label="Decrease quantity"
+                    >
+                        −
+                    </button>
+
+
+                    <span
+                        class="quantity-number"
+                        id="quantity"
+                    >
+                        1
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="quantity-button plus"
+                        aria-label="Increase quantity"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TOTAL -->
+
+            <div class="product-total-row">
+
+                <span>
+                    TOTAL
+                </span>
+
+                <strong id="productTotal">
+                    $30.00
+                </strong>
+
+            </div>
+
+
+
+            <!-- ADD TO CART -->
+
+            <button
+                type="button"
+                class="add-cart-button"
+                id="addToCart"
+            >
+
+                <span>
+                    ADD TO CART
+                </span>
+
+                <strong>
+                    $30.00
+                </strong>
+
+            </button>
+
+
+
+            <a
+                href="scents.html"
+                class="continue-shopping"
+            >
+                ← CONTINUE SHOPPING
+            </a>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             REFILL
+        ========================== -->
+
+        <section class="product-refill-card">
+
+            <div class="refill-icon">
+                ♻
+            </div>
+
+
+            <div>
+
+                <span>
+                    ALREADY HAVE YOUR BOTTLE?
+                </span>
+
+                <h2>
+                    REFILL FOR $20
+                </h2>
+
+                <p>
+                    Keep your favorite Never Fold
+                    fragrance going.
+                </p>
+
+            </div>
+
+
+            <a
+                href="refills.html"
+                aria-label="Go to refills"
+            >
+                ›
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             BACK TO COLLECTION
+        ========================== -->
+
+        <section class="back-collection">
+
+            <img
+                src="images/img_NFlogo.jpg"
+                alt="Never Fold Fragrances"
+            >
+
+
+            <div>
+
+                <span>
+                    KEEP LOOKING
+                </span>
+
+                <strong>
+                    NEVER FOLD COLLECTION
+                </strong>
+
+            </div>
+
+
+            <a
+                href="scents.html"
+                aria-label="View Never Fold Collection"
+            >
+                ›
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         MOBILE NAVIGATION
+    ========================== -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a
+            href="scents.html"
+            class="nav-item active"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+
+        </a>
+
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+
+        </a>
+
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Refill
+            </span>
+
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
