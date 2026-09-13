@@ -5100,3 +5100,23 @@ button:disabled,
 
     margin: 0 auto;
 }
+
+/* =========================================
+   NEW REFILL HERO IMAGE
+========================================= */
+
+.refill-hero-image-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.refill-main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
