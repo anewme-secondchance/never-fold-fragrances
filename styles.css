@@ -579,259 +579,85 @@ p {
 
 .nf-home-hero {
     position: relative;
-    min-height: 420px;
+    min-height: 410px;
     overflow: hidden;
-    padding: 24px 15px 20px;
-    background:
-        radial-gradient(
-            circle at 50% 35%,
-            rgba(0, 109, 255, 0.18),
-            transparent 42%
-        ),
-        linear-gradient(
-            180deg,
-            #02070d 0%,
-            #020509 65%,
-            #010203 100%
-        );
+    background: #020407;
 }
 
 
 /* =========================================================
-   BLUE + GRAY / WHITE SMOKE
+   REAL SMOKE IMAGE
 ========================================================= */
 
-.nf-smoke {
+.nf-smoke-background {
     position: absolute;
+    inset: 0;
     z-index: 1;
+    overflow: hidden;
     pointer-events: none;
-    border-radius: 50%;
-    filter: blur(45px);
 }
 
-
-.nf-smoke-blue-1 {
-    width: 230px;
-    height: 260px;
-    top: 45px;
-    left: -125px;
-
-    background:
-        rgba(0, 109, 255, 0.48);
-
-    opacity: 0.78;
-}
-
-
-.nf-smoke-blue-2 {
-    width: 250px;
-    height: 280px;
-    top: 160px;
-    right: -145px;
-
-    background:
-        rgba(0, 168, 255, 0.38);
-
-    opacity: 0.72;
-}
-
-
-.nf-smoke-gray-1 {
-    width: 220px;
-    height: 230px;
-    top: 105px;
-    left: 52px;
-
-    background:
-        rgba(210, 220, 230, 0.16);
-
-    opacity: 0.65;
-}
-
-
-.nf-smoke-gray-2 {
-    width: 210px;
-    height: 220px;
-    bottom: -45px;
-    right: 20px;
-
-    background:
-        rgba(255, 255, 255, 0.13);
-
-    opacity: 0.55;
+.nf-smoke-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
 /* =========================================================
-   REAL NEVER FOLD LOGO IN HERO
+   REAL NEVER FOLD LOGO
 ========================================================= */
 
 .nf-background-logo {
-    position: absolute;
+    position: relative;
     z-index: 2;
 
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    min-height: 410px;
 
-    top: 48px;
-    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    transform:
-        translateX(-50%);
-
-    overflow: hidden;
-
-    border-radius: 28px;
-
-    opacity: 0.82;
-
-    filter:
-        contrast(1.05)
-        saturate(1.08);
-
-    box-shadow:
-        0 0 38px rgba(0, 109, 255, 0.25);
+    padding: 10px 0;
 }
 
+.nf-background-logo img {
+    width: 100%;
+    max-width: 410px;
+    height: auto;
 
-.nf-background-logo::after {
-    content: "";
+    object-fit: contain;
 
-    position: absolute;
-    inset: 0;
+    border-radius: 0;
 
-    background:
+    filter:
+        contrast(1.03)
+        saturate(1.06);
+
+    -webkit-mask-image:
         linear-gradient(
-            180deg,
-            rgba(1, 4, 8, 0.08),
-            rgba(1, 4, 8, 0.12) 50%,
-            rgba(1, 4, 8, 0.80) 100%
+            to bottom,
+            transparent 0%,
+            #000 8%,
+            #000 90%,
+            transparent 100%
+        );
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            #000 8%,
+            #000 90%,
+            transparent 100%
         );
 }
 
 
-.nf-background-logo img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-
 /* =========================================================
-   HERO BRAND
-========================================================= */
-
-.nf-hero-brand {
-    position: relative;
-    z-index: 5;
-
-    width: max-content;
-
-    margin: 0 auto;
-
-    text-align: center;
-}
-
-
-.nf-hero-brand span {
-    display: block;
-
-    color: var(--gold);
-
-    font-size: 25px;
-    font-weight: 1000;
-    letter-spacing: 1px;
-
-    text-shadow:
-        0 0 8px rgba(255, 212, 71, 0.5);
-}
-
-
-.nf-hero-brand small {
-    display: block;
-
-    margin-top: 3px;
-
-    color: var(--gold-light);
-
-    font-size: 8px;
-    font-weight: 900;
-    letter-spacing: 4px;
-}
-
-
-/* =========================================================
-   HERO COPY
-========================================================= */
-
-.nf-hero-copy {
-    position: absolute;
-    z-index: 5;
-
-    bottom: 54px;
-    left: 0;
-    right: 0;
-
-    text-align: center;
-}
-
-
-.nf-hero-copy p {
-    margin: 0;
-
-    color: var(--white);
-
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 2.2px;
-}
-
-
-.nf-hero-copy strong {
-    display: block;
-
-    margin-top: 4px;
-
-    color: var(--gold);
-
-    font-size: 22px;
-    letter-spacing: 0.5px;
-
-    text-shadow:
-        0 0 10px rgba(255, 212, 71, 0.38);
-}
-
-
-/* =========================================================
-   HANDLE
-========================================================= */
-
-.nf-home-handle {
-    position: absolute;
-    z-index: 5;
-
-    right: 20px;
-    bottom: 18px;
-
-    color: var(--blue-bright);
-
-    font-family:
-        "Brush Script MT",
-        "Segoe Script",
-        cursive;
-
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 700;
-
-    text-shadow:
-        0 0 10px rgba(0, 168, 255, 0.7);
-}
-
-
-/* =========================================================
-   HOME ACTION BOTTLES
+   HOME ACTION IMAGES
 ========================================================= */
 
 .nf-home-actions {
@@ -843,34 +669,24 @@ p {
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    gap: 18px 11px;
+    gap: 16px 10px;
 
     padding:
-        24px 13px 28px;
+        22px 12px 28px;
 
-    background:
-        radial-gradient(
-            circle at 50% 35%,
-            rgba(0, 109, 255, 0.13),
-            transparent 48%
-        ),
-        #020407;
+    background: #020407;
 }
 
 
 /* =========================================================
-   BOTTLE CARD
+   CLICKABLE IMAGE ACTION
 ========================================================= */
 
-.nf-bottle-card {
-    position: relative;
-
+.nf-image-action {
     min-width: 0;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 
     text-align: center;
@@ -878,370 +694,42 @@ p {
     color: var(--white);
 }
 
-
-.nf-bottle-card:active {
-    transform:
-        scale(0.98);
+.nf-image-action:active {
+    transform: scale(0.98);
 }
 
 
 /* =========================================================
-   MINI PERFUME BOTTLE
+   REAL BOTTLE IMAGE
 ========================================================= */
 
-.nf-mini-bottle {
-    position: relative;
+.nf-action-bottle {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
 
-    width: 122px;
-    height: 174px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: flex-end;
+    object-fit: contain;
 
     filter:
         drop-shadow(
-            0 13px 12px rgba(0, 0, 0, 0.58)
+            0 10px 12px rgba(0, 0, 0, 0.55)
         );
-}
-
-
-/* bottle glow behind bottle */
-
-.nf-mini-bottle::before {
-    content: "";
-
-    position: absolute;
-
-    z-index: -1;
-
-    width: 120px;
-    height: 135px;
-
-    bottom: 0;
-
-    border-radius: 50%;
-
-    background:
-        rgba(0, 120, 255, 0.34);
-
-    filter:
-        blur(25px);
-}
-
-
-/* bottle floor shadow */
-
-.nf-mini-bottle::after {
-    content: "";
-
-    position: absolute;
-
-    width: 85px;
-    height: 10px;
-
-    bottom: -2px;
-
-    border-radius: 50%;
-
-    background:
-        rgba(0, 0, 0, 0.65);
-
-    filter:
-        blur(4px);
 }
 
 
 /* =========================================================
-   GOLD CAP
+   TEXT UNDER BOTTLE IMAGES
 ========================================================= */
 
-.nf-mini-cap {
-    position: relative;
-    z-index: 4;
+.nf-action-text {
+    min-height: 48px;
 
-    width: 50px;
-    height: 31px;
-
-    margin-bottom: -1px;
-
-    border:
-        1px solid rgba(255, 240, 163, 0.68);
-
-    border-radius:
-        8px 8px 3px 3px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #302104 0%,
-            #8f6512 17%,
-            #ffe47b 43%,
-            #fff3ad 52%,
-            #d09a26 67%,
-            #4d3507 100%
-        );
-
-    box-shadow:
-        inset 0 2px 3px rgba(255, 255, 255, 0.42),
-        0 0 10px rgba(255, 212, 71, 0.35);
-}
-
-
-.nf-mini-cap::after {
-    content: "";
-
-    position: absolute;
-
-    width: 31px;
-    height: 9px;
-
-    left: 50%;
-    bottom: -8px;
-
-    transform:
-        translateX(-50%);
-
-    background:
-        linear-gradient(
-            90deg,
-            #241704,
-            #e4b536,
-            #332004
-        );
-
-    border-radius:
-        0 0 4px 4px;
-}
-
-
-/* =========================================================
-   BLUE GLASS BOTTLE
-========================================================= */
-
-.nf-mini-glass {
-    position: relative;
-    z-index: 3;
-
-    width: 108px;
-    height: 137px;
-
-    padding:
-        27px 8px 13px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    overflow: hidden;
-
-    border:
-        2px solid rgba(255, 212, 71, 0.65);
-
-    border-radius:
-        13px 13px 23px 23px;
-
-    background:
-        linear-gradient(
-            118deg,
-            rgba(255, 255, 255, 0.38) 0%,
-            rgba(255, 255, 255, 0.08) 15%,
-            #0b6eda 37%,
-            #064488 59%,
-            #021c3a 80%,
-            #000b18 100%
-        );
-
-    box-shadow:
-        inset 8px 0 13px rgba(255, 255, 255, 0.15),
-        inset -10px 0 18px rgba(0, 0, 0, 0.43),
-        inset 0 -8px 18px rgba(0, 0, 0, 0.36),
-        0 0 13px rgba(0, 168, 255, 0.55),
-        0 0 30px rgba(0, 109, 255, 0.33);
-}
-
-
-/* glass shine */
-
-.nf-mini-glass::before {
-    content: "";
-
-    position: absolute;
-
-    width: 20px;
-    height: 105px;
-
-    top: 12px;
-    left: 10px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0.45),
-            rgba(255, 255, 255, 0.04)
-        );
-
-    filter:
-        blur(2px);
-
-    transform:
-        rotate(5deg);
-}
-
-
-/* lower blue glow */
-
-.nf-mini-glass::after {
-    content: "";
-
-    position: absolute;
-
-    width: 95px;
-    height: 35px;
-
-    left: 50%;
-    bottom: -14px;
-
-    transform:
-        translateX(-50%);
-
-    border-radius: 50%;
-
-    background:
-        rgba(0, 168, 255, 0.34);
-
-    filter:
-        blur(11px);
-}
-
-
-/* =========================================================
-   NF ON BOTTLE
-========================================================= */
-
-.nf-mini-logo {
-    position: relative;
-    z-index: 3;
-
-    display: block;
-
-    color: var(--gold);
-
-    font-size: 29px;
-    font-weight: 1000;
-    font-style: italic;
-    line-height: 1;
-
-    text-shadow:
-        0 0 8px rgba(255, 212, 71, 0.45);
-}
-
-
-.nf-mini-glass strong {
-    position: relative;
-    z-index: 3;
-
-    display: block;
-
-    margin-top: 8px;
-
-    color: var(--white);
-
-    font-size: 13px;
-    font-weight: 1000;
-    line-height: 1;
-    letter-spacing: 1px;
-}
-
-
-.nf-mini-glass small {
-    position: relative;
-    z-index: 3;
-
-    display: block;
-
-    margin-top: 5px;
-
-    color: var(--gold-light);
-
-    font-size: 7px;
-    font-weight: 900;
-    letter-spacing: 0.8px;
-}
-
-
-/* =========================================================
-   GOLD $20 REFILL BOTTLE
-========================================================= */
-
-.nf-refill-bottle
-.nf-mini-bottle::before {
-    background:
-        rgba(255, 190, 30, 0.30);
-}
-
-
-.nf-refill-bottle
-.nf-mini-glass {
-    border-color:
-        rgba(255, 240, 163, 0.88);
-
-    background:
-        linear-gradient(
-            118deg,
-            rgba(255, 255, 255, 0.55) 0%,
-            rgba(255, 255, 255, 0.08) 17%,
-            #e4b637 37%,
-            #ae7813 62%,
-            #533402 85%,
-            #1b1000 100%
-        );
-
-    box-shadow:
-        inset 8px 0 13px rgba(255, 255, 255, 0.18),
-        inset -10px 0 18px rgba(55, 30, 0, 0.48),
-        inset 0 -8px 18px rgba(70, 43, 0, 0.35),
-        0 0 14px rgba(255, 212, 71, 0.62),
-        0 0 30px rgba(255, 176, 0, 0.30);
-}
-
-
-.nf-refill-bottle
-.nf-mini-logo {
-    color: #fff3ad;
-}
-
-
-.nf-refill-bottle
-.nf-mini-glass small {
-    color: #fff7d4;
-}
-
-
-/* =========================================================
-   TEXT UNDER BOTTLES
-========================================================= */
-
-.nf-bottle-text {
-    min-height: 51px;
-
-    margin-top: 8px;
+    margin-top: 7px;
 
     text-align: center;
 }
 
-
-.nf-bottle-text strong {
+.nf-action-text strong {
     display: block;
 
     color: var(--white);
@@ -1250,8 +738,7 @@ p {
     line-height: 1.15;
 }
 
-
-.nf-bottle-text small {
+.nf-action-text small {
     display: block;
 
     margin-top: 5px;
@@ -1265,129 +752,50 @@ p {
 
 
 /* =========================================================
-   HOME INFO — 4–8 HOURS / BODY CAR HOME
+   REAL LONGEVITY / USES FOOTER IMAGE
 ========================================================= */
 
-.nf-home-info {
-    display: grid;
-
-    grid-template-columns:
-        1fr 1.3fr;
-
-    gap: 9px;
+.nf-home-info-image {
+    position: relative;
+    z-index: 4;
 
     padding:
-        6px 13px 24px;
+        0 10px 24px;
 
-    background:
-        #020407;
+    background: #020407;
 }
 
+.nf-home-info-image img {
+    width: 100%;
+    height: auto;
 
-.nf-info-box {
-    min-height: 86px;
-
-    padding:
-        11px 8px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 13px;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(12, 23, 35, 0.96),
-            rgba(5, 10, 16, 0.98)
-        );
-}
-
-
-.nf-info-hours {
-    border:
-        1px solid var(--gold);
-
-    box-shadow:
-        0 0 14px rgba(255, 212, 71, 0.20);
-}
-
-
-.nf-info-uses {
-    border:
-        1px solid var(--blue-bright);
-
-    box-shadow:
-        0 0 14px rgba(0, 168, 255, 0.22);
-}
-
-
-.nf-info-icon {
-    margin-bottom: 5px;
-
-    color: var(--gold);
-
-    font-size: 21px;
-}
-
-
-.nf-use-icons {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    margin-bottom: 5px;
-
-    color: var(--blue-bright);
-
-    font-size: 16px;
-}
-
-
-.nf-info-box strong {
     display: block;
 
-    color: var(--white);
-
-    font-size: 15px;
-    line-height: 1.05;
+    object-fit: contain;
 }
 
 
-.nf-info-hours strong {
-    color: var(--gold);
+/* =========================================================
+   MOBILE TUNING
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .nf-home-hero {
+        min-height: 365px;
+    }
+
+    .nf-background-logo {
+        min-height: 365px;
+    }
+
+    .nf-action-bottle {
+        max-width: 155px;
+    }
+
 }
 
 
-.nf-info-uses strong {
-    color: var(--blue-bright);
-
-    font-size: 12px;
-}
-
-
-.nf-info-box small {
-    display: block;
-
-    margin-top: 5px;
-
-    color: var(--silver);
-
-    font-size: 7px;
-    font-weight: 900;
-    letter-spacing: 0.8px;
-}
 
 
 /* =========================================================
