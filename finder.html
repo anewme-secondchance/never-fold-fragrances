@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#050505">
+
+    <title>What's Your Fold? | Never Fold Fragrances</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="top-header">
+
+        <a
+            href="index.html"
+            class="back-button"
+            aria-label="Back to home"
+        >
+            ‹
+        </a>
+
+
+        <div class="brand-name">
+
+            <strong>NEVER FOLD</strong>
+
+            <span>FRAGRANCES</span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+            🛒
+
+            <span class="cart-count">
+                0
+            </span>
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         SCENT FINDER
+    ========================== -->
+
+    <main class="finder-page">
+
+
+        <!-- HERO -->
+
+        <section class="finder-hero">
+
+            <div class="finder-logo">
+
+                <img
+                    src="images/img_NFlogo.jpg"
+                    alt="Never Fold Fragrances"
+                >
+
+            </div>
+
+
+            <span class="finder-small-title">
+                NEVER FOLD SCENT FINDER
+            </span>
+
+
+            <h1>
+                WHAT'S
+                <span>YOUR FOLD?</span>
+            </h1>
+
+
+            <p>
+                Choose what fits your energy and
+                we'll match you with a Never Fold scent.
+            </p>
+
+
+            <div class="finder-progress">
+
+                <div class="progress-number">
+                    <span id="currentQuestion">
+                        1
+                    </span>
+                    /
+                    <span>
+                        4
+                    </span>
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="progressFill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUESTION 1
+        ========================== -->
+
+        <section
+            class="finder-question active-question"
+            id="question1"
+        >
+
+            <span class="question-number">
+                QUESTION 01
+            </span>
+
+
+            <h2>
+                WHAT KIND OF ENERGY
+                ARE YOU BRINGING?
+            </h2>
+
+
+            <div class="answer-grid">
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="energy"
+                    data-answer="bold"
+                >
+
+                    <span class="answer-icon">
+                        🔥
+                    </span>
+
+                    <strong>
+                        BOLD
+                    </strong>
+
+                    <small>
+                        I want to be noticed.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="energy"
+                    data-answer="smooth"
+                >
+
+                    <span class="answer-icon">
+                        ♠
+                    </span>
+
+                    <strong>
+                        SMOOTH
+                    </strong>
+
+                    <small>
+                        Calm, clean and confident.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="energy"
+                    data-answer="sweet"
+                >
+
+                    <span class="answer-icon">
+                        ✨
+                    </span>
+
+                    <strong>
+                        SWEET
+                    </strong>
+
+                    <small>
+                        Soft with personality.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="energy"
+                    data-answer="fresh"
+                >
+
+                    <span class="answer-icon">
+                        💎
+                    </span>
+
+                    <strong>
+                        FRESH
+                    </strong>
+
+                    <small>
+                        Crisp and refreshing.
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUESTION 2
+        ========================== -->
+
+        <section
+            class="finder-question"
+            id="question2"
+        >
+
+            <span class="question-number">
+                QUESTION 02
+            </span>
+
+
+            <h2>
+                WHEN ARE YOU
+                WEARING IT?
+            </h2>
+
+
+            <div class="answer-grid">
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="time"
+                    data-answer="day"
+                >
+
+                    <span class="answer-icon">
+                        ☀
+                    </span>
+
+                    <strong>
+                        DAY
+                    </strong>
+
+                    <small>
+                        Everyday energy.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="time"
+                    data-answer="night"
+                >
+
+                    <span class="answer-icon">
+                        ☾
+                    </span>
+
+                    <strong>
+                        NIGHT
+                    </strong>
+
+                    <small>
+                        After-dark energy.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="time"
+                    data-answer="special"
+                >
+
+                    <span class="answer-icon">
+                        👑
+                    </span>
+
+                    <strong>
+                        SPECIAL
+                    </strong>
+
+                    <small>
+                        When I need to stand out.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="time"
+                    data-answer="anytime"
+                >
+
+                    <span class="answer-icon">
+                        ⚡
+                    </span>
+
+                    <strong>
+                        ANYTIME
+                    </strong>
+
+                    <small>
+                        I need an everyday favorite.
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUESTION 3
+        ========================== -->
+
+        <section
+            class="finder-question"
+            id="question3"
+        >
+
+            <span class="question-number">
+                QUESTION 03
+            </span>
+
+
+            <h2>
+                HOW DO YOU WANT
+                YOUR SCENT TO HIT?
+            </h2>
+
+
+            <div class="answer-grid">
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="strength"
+                    data-answer="loud"
+                >
+
+                    <span class="answer-icon">
+                        ⚡
+                    </span>
+
+                    <strong>
+                        LOUD
+                    </strong>
+
+                    <small>
+                        Make an entrance.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="strength"
+                    data-answer="balanced"
+                >
+
+                    <span class="answer-icon">
+                        ◆
+                    </span>
+
+                    <strong>
+                        BALANCED
+                    </strong>
+
+                    <small>
+                        Noticeable but smooth.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="strength"
+                    data-answer="soft"
+                >
+
+                    <span class="answer-icon">
+                        ✦
+                    </span>
+
+                    <strong>
+                        SOFT
+                    </strong>
+
+                    <small>
+                        Keep it close.
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUESTION 4
+        ========================== -->
+
+        <section
+            class="finder-question"
+            id="question4"
+        >
+
+            <span class="question-number">
+                QUESTION 04
+            </span>
+
+
+            <h2>
+                WHO ARE YOU
+                SHOPPING FOR?
+            </h2>
+
+
+            <div class="answer-grid">
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="for"
+                    data-answer="him"
+                >
+
+                    <span class="answer-icon">
+                        ♛
+                    </span>
+
+                    <strong>
+                        HIM
+                    </strong>
+
+                    <small>
+                        Find his Never Fold scent.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="for"
+                    data-answer="her"
+                >
+
+                    <span class="answer-icon">
+                        ♕
+                    </span>
+
+                    <strong>
+                        HER
+                    </strong>
+
+                    <small>
+                        Find her Never Fold scent.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="finder-answer"
+                    data-question="for"
+                    data-answer="either"
+                >
+
+                    <span class="answer-icon">
+                        NF
+                    </span>
+
+                    <strong>
+                        NO LIMIT
+                    </strong>
+
+                    <small>
+                        Just match the energy.
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             RESULTS
+        ========================== -->
+
+        <section
+            class="finder-result"
+            id="finderResult"
+        >
+
+
+            <span class="result-small-title">
+                YOUR NEVER FOLD MATCH
+            </span>
+
+
+            <h2>
+                WE FOUND
+                <span>YOUR FOLD.</span>
+            </h2>
+
+
+            <div class="result-card">
+
+
+                <div class="result-bottle">
+
+                    <div class="perfume-bottle">
+
+                        <div class="bottle-cap"></div>
+
+
+                        <div class="bottle-glass">
+
+                            <span class="bottle-nf">
+                                NF
+                            </span>
+
+                            <span
+                                class="bottle-name"
+                                id="resultBottleName"
+                            >
+                                NEVER FOLD
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-info">
+
+                    <span>
+                        WE RECOMMEND
+                    </span>
+
+
+                    <h3 id="resultName">
+                        Your Never Fold Scent
+                    </h3>
+
+
+                    <p id="resultReason">
+                        Based on the energy you chose,
+                        this is your Never Fold match.
+                    </p>
+
+
+                    <strong class="result-price">
+                        $30
+                    </strong>
+
+
+                    <a
+                        href="product.html"
+                        class="result-shop-button"
+                        id="resultProductLink"
+                    >
+                        VIEW MY SCENT
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <button
+                type="button"
+                class="restart-finder"
+                id="restartFinder"
+            >
+                ↻ TAKE THE QUIZ AGAIN
+            </button>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             COLLECTION LINK
+        ========================== -->
+
+        <section class="finder-collection-link">
+
+            <span>
+                WANT TO SEE THEM ALL?
+            </span>
+
+
+            <h2>
+                EXPLORE THE FULL
+                NEVER FOLD COLLECTION
+            </h2>
+
+
+            <a href="scents.html">
+                VIEW ALL 10 SCENTS →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         BOTTOM NAVIGATION
+    ========================== -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+        </a>
+
+
+        <a
+            href="scents.html"
+            class="nav-item active"
+        >
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+        </a>
+
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+        </a>
+
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Refill
+            </span>
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
