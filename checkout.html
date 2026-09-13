@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Checkout | Never Fold Fragrances</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="top-header">
+
+        <a
+            href="cart.html"
+            class="back-button"
+            aria-label="Back to cart"
+        >
+            ‹
+        </a>
+
+
+        <div class="brand-name">
+
+            <strong>NEVER FOLD</strong>
+
+            <span>FRAGRANCES</span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+            🛒
+
+            <span
+                class="cart-count"
+                id="cartCount"
+            >
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- ========================================
+         CHECKOUT PAGE
+    ========================================= -->
+
+    <main class="checkout-page">
+
+
+        <!-- ====================================
+             HERO
+        ===================================== -->
+
+        <section class="checkout-hero">
+
+            <span class="checkout-small-title">
+                NEVER FOLD FRAGRANCES
+            </span>
+
+
+            <h1>
+                SECURE
+                <span>CHECKOUT</span>
+            </h1>
+
+
+            <p>
+                Review your order and enter
+                your information below.
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CHECKOUT FORM
+        ========================================= -->
+
+        <form
+            class="checkout-form"
+            id="checkoutForm"
+        >
+
+
+            <!-- ====================================
+                 CONTACT INFORMATION
+            ===================================== -->
+
+            <section class="checkout-section">
+
+
+                <div class="checkout-section-heading">
+
+                    <span>
+                        STEP 1
+                    </span>
+
+                    <h2>
+                        CONTACT INFORMATION
+                    </h2>
+
+                </div>
+
+
+
+                <!-- FULL NAME -->
+
+                <div class="checkout-field">
+
+                    <label for="customerName">
+                        FULL NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        name="customerName"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="checkout-field">
+
+                    <label for="customerEmail">
+                        EMAIL
+                    </label>
+
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        name="customerEmail"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="checkout-field">
+
+                    <label for="customerPhone">
+                        PHONE NUMBER
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        name="customerPhone"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ====================================
+                 SHIPPING ADDRESS
+            ===================================== -->
+
+            <section class="checkout-section">
+
+
+                <div class="checkout-section-heading">
+
+                    <span>
+                        STEP 2
+                    </span>
+
+                    <h2>
+                        SHIPPING ADDRESS
+                    </h2>
+
+                </div>
+
+
+
+                <!-- STREET ADDRESS -->
+
+                <div class="checkout-field">
+
+                    <label for="shippingAddress">
+                        STREET ADDRESS
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shippingAddress"
+                        name="shippingAddress"
+                        autocomplete="shipping street-address"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- APARTMENT -->
+
+                <div class="checkout-field">
+
+                    <label for="shippingAddress2">
+                        APARTMENT / SUITE
+                        <span>OPTIONAL</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shippingAddress2"
+                        name="shippingAddress2"
+                        autocomplete="shipping address-line2"
+                    >
+
+                </div>
+
+
+
+                <!-- CITY -->
+
+                <div class="checkout-field">
+
+                    <label for="shippingCity">
+                        CITY
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shippingCity"
+                        name="shippingCity"
+                        autocomplete="shipping address-level2"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- STATE + ZIP -->
+
+                <div class="checkout-field-row">
+
+
+                    <div class="checkout-field">
+
+                        <label for="shippingState">
+                            STATE
+                        </label>
+
+
+                        <select
+                            id="shippingState"
+                            name="shippingState"
+                            autocomplete="shipping address-level1"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="checkout-field">
+
+                        <label for="shippingZip">
+                            ZIP CODE
+                        </label>
+
+                        <input
+                            type="text"
+                            id="shippingZip"
+                            name="shippingZip"
+                            autocomplete="shipping postal-code"
+                            inputmode="numeric"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ====================================
+                 ORDER NOTES
+            ===================================== -->
+
+            <section class="checkout-section">
+
+
+                <div class="checkout-section-heading">
+
+                    <span>
+                        STEP 3
+                    </span>
+
+                    <h2>
+                        ORDER NOTES
+                    </h2>
+
+                </div>
+
+
+                <div class="checkout-field">
+
+                    <label for="orderNotes">
+
+                        NOTES FOR YOUR ORDER
+
+                        <span>
+                            OPTIONAL
+                        </span>
+
+                    </label>
+
+
+                    <textarea
+                        id="orderNotes"
+                        name="orderNotes"
+                        rows="4"
+                        maxlength="500"
+                        placeholder="Anything Never Fold needs to know about your order?"
+                    ></textarea>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ========================================
+                 ORDER REVIEW
+            ========================================= -->
+
+            <section class="checkout-order-review">
+
+
+                <div class="checkout-section-heading">
+
+                    <span>
+                        STEP 4
+                    </span>
+
+                    <h2>
+                        REVIEW YOUR ORDER
+                    </h2>
+
+                </div>
+
+
+
+                <!--
+                    script.js will load the customer's
+                    actual cart items here.
+
+                    This MUST use the same saved cart
+                    data as cart.html.
+                -->
+
+                <div
+                    class="checkout-items"
+                    id="checkoutItems"
+                >
+                </div>
+
+
+
+                <!-- EMPTY ORDER WARNING -->
+
+                <div
+                    class="checkout-empty-order"
+                    id="checkoutEmptyOrder"
+                >
+
+                    <strong>
+                        YOUR CART IS EMPTY
+                    </strong>
+
+
+                    <p>
+                        Add a fragrance before
+                        continuing checkout.
+                    </p>
+
+
+                    <a href="scents.html">
+                        SHOP NEVER FOLD
+                    </a>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ========================================
+                 CHECKOUT TOTALS
+            ========================================= -->
+
+            <section class="checkout-summary">
+
+
+                <div class="checkout-summary-heading">
+
+                    <span>
+                        ORDER
+                    </span>
+
+                    <h2>
+                        TOTAL
+                    </h2>
+
+                </div>
+
+
+
+                <!-- SUBTOTAL -->
+
+                <div class="checkout-summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+
+                    <strong id="checkoutSubtotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+
+                <!-- SHIPPING -->
+
+                <div class="checkout-summary-row">
+
+                    <div>
+
+                        <span>
+                            Shipping
+                        </span>
+
+                        <small>
+                            Flat Rate
+                        </small>
+
+                    </div>
+
+
+                    <strong
+                        id="checkoutShipping"
+                        data-shipping="6.99"
+                    >
+                        $6.99
+                    </strong>
+
+                </div>
+
+
+
+                <!-- TAX -->
+
+                <div class="checkout-summary-row">
+
+                    <span>
+                        Tax
+                    </span>
+
+
+                    <strong id="checkoutTax">
+                        To be calculated
+                    </strong>
+
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div class="checkout-total-row">
+
+
+                    <div>
+
+                        <span>
+                            TOTAL BEFORE TAX
+                        </span>
+
+                        <small>
+                            Merchandise + $6.99 shipping
+                        </small>
+
+                    </div>
+
+
+                    <strong id="checkoutTotal">
+                        $0.00
+                    </strong>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ========================================
+                 PAYMENT
+            ========================================= -->
+
+            <section class="checkout-payment">
+
+
+                <div class="checkout-section-heading">
+
+                    <span>
+                        STEP 5
+                    </span>
+
+                    <h2>
+                        PAYMENT
+                    </h2>
+
+                </div>
+
+
+
+                <div class="payment-security">
+
+                    <span class="payment-lock">
+                        🔒
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            SECURE PAYMENT
+                        </strong>
+
+
+                        <p>
+                            Payment information will be
+                            handled through our secure
+                            payment provider.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--
+                    IMPORTANT:
+
+                    DO NOT PLACE RAW CREDIT CARD
+                    NUMBER / CVV FIELDS HERE.
+
+                    The final payment provider will
+                    securely collect card information.
+                -->
+
+                <div
+                    class="payment-provider-area"
+                    id="paymentProviderArea"
+                >
+
+                    <p>
+                        Secure payment will appear here
+                        when checkout is connected.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ========================================
+                 PLACE ORDER
+            ========================================= -->
+
+            <section class="place-order-section">
+
+
+                <button
+                    type="submit"
+                    class="place-order-button"
+                    id="placeOrderButton"
+                    disabled
+                >
+
+                    <span>
+                        PLACE ORDER
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <p class="checkout-security-message">
+                    Your order will not be submitted
+                    until payment is securely completed.
+                </p>
+
+
+                <a
+                    href="cart.html"
+                    class="return-to-cart"
+                >
+                    ← RETURN TO CART
+                </a>
+
+
+            </section>
+
+
+        </form>
+
+
+
+        <!-- ========================================
+             CONTACT
+        ========================================= -->
+
+        <section class="checkout-contact">
+
+
+            <span>
+                NEED HELP WITH YOUR ORDER?
+            </span>
+
+
+            <h2>
+                CONTACT MARDY
+            </h2>
+
+
+            <strong>
+                De’Mardia Goss
+            </strong>
+
+
+            <a href="tel:+14303443528">
+                (430) 344-3528
+            </a>
+
+
+            <p>
+                Facebook: Diamond Prince Mardy Goss
+            </p>
+
+
+            <a href="https://neverfoldfragrance.com/">
+                neverfoldfragrance.com
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         BOTTOM NAVIGATION
+    ========================================= -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="scents.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ↻
+            </span>
+
+            <span>
+                Refill
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
