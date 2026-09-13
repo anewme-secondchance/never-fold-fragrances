@@ -1436,236 +1436,34 @@ p {
     font-weight: 900;
 }
 
-
 .bottle-stage {
-
     position: relative;
 
-    min-height: 92px;
-
-    display: grid;
-
-    place-items: center;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 50% 45%,
-            rgba(0, 140, 255, 0.35),
-            transparent 58%
-        ),
-        linear-gradient(
-            180deg,
-            #e6edf2 0%,
-            #788997 100%
-        );
-}
-
-
-.bottle-stage::after {
-
-    content: "";
-
-    position: absolute;
-
-    bottom: 8px;
-
-    width: 49px;
-
-    height: 7px;
-
-    border-radius: 50%;
-
-    background:
-        rgba(0, 0, 0, 0.35);
-
-    filter: blur(3px);
-}
-
-
-.perfume-bottle {
-
-    position: relative;
-
-    z-index: 2;
-
-    width: 48px;
-
-    height: 74px;
+    min-height: 150px;
 
     display: flex;
-
-    flex-direction: column;
-
     align-items: center;
-
-    filter:
-        drop-shadow(
-            0 7px 6px rgba(0, 0, 0, 0.42)
-        );
-}
-
-
-.bottle-cap {
-
-    width: 22px;
-
-    height: 13px;
-
-    border-radius:
-        4px 4px 2px 2px;
-
-    border:
-        1px solid rgba(255, 255, 255, 0.42);
-
-    background:
-        linear-gradient(
-            90deg,
-            #101010,
-            #d2b15a 50%,
-            #101010
-        );
-}
-
-
-.bottle-glass {
-
-    position: relative;
-
-    width: 46px;
-
-    height: 59px;
-
-    padding:
-        8px 3px 4px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
     justify-content: center;
 
     overflow: hidden;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.58);
-
-    border-radius:
-        5px 5px 9px 9px;
-
     background:
         linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0.43),
-            rgba(255, 255, 255, 0.05) 24%,
-            #0865cf 50%,
-            #001633 100%
-        );
-
-    box-shadow:
-        inset 4px 0 8px rgba(255, 255, 255, 0.14),
-        inset -4px 0 8px rgba(0, 0, 0, 0.35);
-}
-
-
-.bottle-crown {
-
-    color: var(--gold);
-
-    font-size: 9px;
-}
-
-
-.bottle-nf {
-
-    color: var(--gold);
-
-    font-size: 12px;
-
-    font-style: italic;
-
-    font-weight: 1000;
-}
-
-
-.bottle-name {
-
-    max-width: 38px;
-
-    margin-top: 2px;
-
-    color: var(--white);
-
-    font-size: 4.3px;
-
-    font-weight: 900;
-
-    line-height: 1.05;
-
-    text-align: center;
-
-    text-transform: uppercase;
-}
-
-
-/* BOTTLE COLORS */
-
-.fragrance-card.amirah .bottle-glass,
-.fragrance-card.benita .bottle-glass,
-.fragrance-card.evette .bottle-glass,
-.fragrance-card.queen .bottle-glass {
-
-    background:
-        linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0.45),
-            #cf5fa7 50%,
-            #4b0a34
+            180deg,
+            #111923 0%,
+            #070b10 100%
         );
 }
 
+.fragrance-bottle-image {
+    width: 100%;
+    height: 150px;
 
-.fragrance-card.irish .bottle-glass,
-.fragrance-card.lilly .bottle-glass {
+    object-fit: cover;
+    object-position: center;
 
-    background:
-        linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0.45),
-            #65bc79 48%,
-            #164b26
-        );
+    display: block;
 }
-
-
-.fragrance-card.king .bottle-glass,
-.fragrance-card.man .bottle-glass {
-
-    background:
-        linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0.40),
-            #d4a63c 50%,
-            #382305
-        );
-}
-
-
-.fragrance-card.nieko .bottle-glass,
-.fragrance-card.players .bottle-glass {
-
-    background:
-        linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0.45),
-            #087bea 49%,
-            #012b62
-        );
-}
-
 
 .fragrance-details {
 
