@@ -9,131 +9,355 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta name="theme-color" content="#050505">
+    <meta name="theme-color" content="#02070d">
 
-    <title>Thank You | Never Fold Fragrances</title>
+    <title>
+        Order Receipt | Never Fold Fragrances
+    </title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
 </head>
 
 
 <body>
 
-<div class="app">
+<div class="app receipt-app">
 
 
-    <!-- ========================================
-         SIMPLE RECEIPT PAGE
-    ========================================= -->
+    <!-- =========================================
+         SMOKE EFFECTS
+    ========================================== -->
+
+    <div
+        class="smoke smoke-blue smoke-blue-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-blue smoke-blue-two"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-gold smoke-gold-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-green smoke-green-one"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="top-header">
+
+        <a
+            href="index.html"
+            class="back-button"
+            aria-label="Back to home"
+        >
+            ‹
+        </a>
+
+
+        <div class="brand-name">
+
+            <strong>
+                NEVER FOLD
+            </strong>
+
+            <span>
+                FRAGRANCES
+            </span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+
+            🛒
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================
+         RECEIPT PAGE
+    ========================================== -->
 
     <main class="receipt-page">
 
 
-        <!-- ====================================
-             LOGO
-        ===================================== -->
+        <!-- =====================================
+             HERO
+        ====================================== -->
 
-        <section class="receipt-logo">
-
-            <img
-                src="images/img_NFlogo.jpg"
-                alt="Never Fold Fragrances"
-            >
-
-        </section>
+        <section class="receipt-hero">
 
 
+            <div class="receipt-check">
+                ✓
+            </div>
 
-        <!-- ====================================
-             THANK YOU
-        ===================================== -->
 
-        <section class="receipt-thank-you">
+            <p class="receipt-small-title">
+                NEVER FOLD FRAGRANCES
+            </p>
 
-            <h1>
-                THANK YOU!
+
+            <h1 class="graffiti-text">
+                ORDER RECEIPT
             </h1>
 
-            <p>
+
+            <p class="receipt-thank-you">
                 Thank you for choosing
                 <strong>Never Fold Fragrances.</strong>
             </p>
 
-            <p>
-                Your order has been received.
+
+            <p class="receipt-tagline graffiti-text">
+                STAY SCENTED.
             </p>
 
         </section>
 
 
 
-        <!-- ====================================
-             ORDER NUMBER
-        ===================================== -->
+        <!-- =====================================
+             ORDER STATUS
+        ====================================== -->
 
-        <section class="receipt-order-number">
+        <section class="receipt-status-card">
 
-            <span>
-                ORDER NUMBER
-            </span>
 
-            <strong id="receiptOrderNumber">
-                —
-            </strong>
+            <div class="receipt-status-heading">
+
+                <small>
+                    PAYMENT STATUS
+                </small>
+
+
+                <strong
+                    id="paymentStatus"
+                    data-payment-status
+                >
+                    NOT PROCESSED
+                </strong>
+
+            </div>
+
+
+            <p>
+                Payment status will update after
+                a real payment provider is connected
+                and confirms the order.
+            </p>
+
 
         </section>
 
 
 
-        <!-- ====================================
-             CUSTOMER
-        ===================================== -->
+        <!-- =====================================
+             ORDER INFORMATION
+        ====================================== -->
 
-        <section class="receipt-customer">
+        <section class="receipt-section">
 
-            <h2>
-                ORDER FOR
-            </h2>
 
-            <strong id="receiptCustomerName">
-                —
-            </strong>
+            <div class="receipt-section-heading">
+
+                <small>
+                    ORDER DETAILS
+                </small>
+
+                <h2>
+                    YOUR ORDER
+                </h2>
+
+            </div>
+
+
+
+            <div class="receipt-detail-row">
+
+                <span>
+                    ORDER NUMBER
+                </span>
+
+                <strong id="orderNumber">
+                    —
+                </strong>
+
+            </div>
+
+
+
+            <div class="receipt-detail-row">
+
+                <span>
+                    ORDER DATE
+                </span>
+
+                <strong id="orderDate">
+                    —
+                </strong>
+
+            </div>
+
 
         </section>
 
 
 
-        <!-- ====================================
-             WHAT THEY ORDERED
-        ===================================== -->
+        <!-- =====================================
+             CUSTOMER INFORMATION
+        ====================================== -->
 
-        <section class="receipt-order">
-
-
-            <h2>
-                YOUR ORDER
-            </h2>
+        <section class="receipt-section">
 
 
-            <!--
-                script.js will automatically place
-                the completed order items here.
+            <div class="receipt-section-heading">
 
-                Each item will show:
+                <small>
+                    CUSTOMER
+                </small>
 
-                Product Name
-                Product Type
-                Quantity
-                Unit Price
-                Line Total
+                <h2>
+                    CONTACT INFORMATION
+                </h2>
 
-                LINE TOTAL =
-                UNIT PRICE × QUANTITY
-            -->
+            </div>
+
+
+
+            <div class="receipt-detail-row receipt-detail-stack">
+
+                <span>
+                    NAME
+                </span>
+
+                <strong id="customerName">
+                    —
+                </strong>
+
+            </div>
+
+
+
+            <div class="receipt-detail-row receipt-detail-stack">
+
+                <span>
+                    EMAIL
+                </span>
+
+                <strong id="customerEmail">
+                    —
+                </strong>
+
+            </div>
+
+
+
+            <div class="receipt-detail-row receipt-detail-stack">
+
+                <span>
+                    PHONE
+                </span>
+
+                <strong id="customerPhone">
+                    —
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             SHIPPING
+        ====================================== -->
+
+        <section class="receipt-section">
+
+
+            <div class="receipt-section-heading">
+
+                <small>
+                    DELIVERY
+                </small>
+
+                <h2>
+                    SHIPPING ADDRESS
+                </h2>
+
+            </div>
+
+
+
+            <div class="receipt-address-box">
+
+                <span class="receipt-address-icon">
+                    ⌂
+                </span>
+
+
+                <p id="receiptAddress">
+                    —
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             ITEMS
+        ====================================== -->
+
+        <section class="receipt-section">
+
+
+            <div class="receipt-section-heading">
+
+                <small>
+                    PURCHASE
+                </small>
+
+                <h2>
+                    ORDER ITEMS
+                </h2>
+
+            </div>
+
+
 
             <div
-                class="receipt-items"
                 id="receiptItems"
+                class="receipt-items"
             >
             </div>
 
@@ -142,19 +366,31 @@
 
 
 
-        <!-- ====================================
-             ORDER TOTALS
-        ===================================== -->
+        <!-- =====================================
+             TOTALS
+        ====================================== -->
 
-        <section class="receipt-totals">
+        <section class="receipt-total-section">
 
 
-            <!-- SUBTOTAL -->
+            <div class="receipt-total-heading">
 
-            <div class="receipt-total-row">
+                <small>
+                    ORDER SUMMARY
+                </small>
+
+                <h2 class="graffiti-text">
+                    TOTAL
+                </h2>
+
+            </div>
+
+
+
+            <div class="receipt-summary-row">
 
                 <span>
-                    Subtotal
+                    SUBTOTAL
                 </span>
 
                 <strong id="receiptSubtotal">
@@ -165,34 +401,21 @@
 
 
 
-            <!-- SHIPPING -->
+            <div class="receipt-summary-row">
 
-            <div class="receipt-total-row">
+                <div>
 
-                <span>
-                    Shipping
-                </span>
+                    <span>
+                        SHIPPING
+                    </span>
 
-                <strong
-                    id="receiptShipping"
-                    data-shipping="6.99"
-                >
-                    $6.99
-                </strong>
+                    <small>
+                        Flat Rate
+                    </small>
 
-            </div>
+                </div>
 
-
-
-            <!-- TAX -->
-
-            <div class="receipt-total-row">
-
-                <span>
-                    Tax
-                </span>
-
-                <strong id="receiptTax">
+                <strong id="receiptShipping">
                     $0.00
                 </strong>
 
@@ -200,12 +423,24 @@
 
 
 
-            <!-- FINAL TOTAL -->
+            <div class="receipt-summary-row">
+
+                <span>
+                    TAX
+                </span>
+
+                <strong id="receiptTax">
+                    Pending
+                </strong>
+
+            </div>
+
+
 
             <div class="receipt-grand-total">
 
                 <span>
-                    TOTAL
+                    ORDER TOTAL
                 </span>
 
                 <strong id="receiptTotal">
@@ -219,69 +454,100 @@
 
 
 
-        <!-- ====================================
-             SHIPPING INFORMATION
-        ===================================== -->
+        <!-- =====================================
+             BRAND MESSAGE
+        ====================================== -->
 
-        <section class="receipt-shipping">
-
-            <h2>
-                SHIP TO
-            </h2>
+        <section class="receipt-brand-message">
 
 
-            <p id="receiptShippingName">
+            <img
+                src="images/img_NFlogo.jpg"
+                alt="Never Fold Fragrances"
+                class="receipt-logo"
+            >
+
+
+            <p class="graffiti-text">
+                NEVER FOLD
             </p>
 
 
-            <p id="receiptShippingAddress">
-            </p>
+            <span class="stay-scented-text">
+                Stay Scented
+            </span>
 
 
-            <p id="receiptShippingAddress2">
-            </p>
+            <small>
+                WEAR IT. SPRAY IT. NEVER FOLD.
+            </small>
 
-
-            <p id="receiptShippingCityStateZip">
-            </p>
 
         </section>
 
 
 
-        <!-- ====================================
-             FINAL MESSAGE
-        ===================================== -->
-
-        <section class="receipt-message">
-
-            <p>
-                Thank you for your order
-                and for choosing
-                <strong>Never Fold Fragrances.</strong>
-            </p>
-
-            <h2>
-                WEAR IT.<br>
-                SPRAY IT.<br>
-                <span>NEVER FOLD.</span>
-            </h2>
-
-        </section>
-
-
-
-        <!-- ====================================
+        <!-- =====================================
              RETURN HOME
-        ===================================== -->
+        ====================================== -->
 
-        <section class="receipt-actions">
+        <a
+            href="index.html"
+            class="receipt-home-button"
+        >
+            <span>
+                RETURN HOME
+            </span>
+
+            <span>
+                ›
+            </span>
+        </a>
+
+
+
+        <!-- =====================================
+             CONTINUE SHOPPING
+        ====================================== -->
+
+        <a
+            href="scents.html"
+            class="receipt-shop-button"
+        >
+            SHOP MORE SCENTS
+        </a>
+
+
+
+        <!-- =====================================
+             CONTACT MARDY
+             SAME ON EVERY PAGE
+        ====================================== -->
+
+        <section class="home-contact-section">
+
+            <p class="home-contact-question">
+                QUESTIONS?
+            </p>
+
 
             <a
-                href="index.html"
-                class="receipt-home-button"
+                href="contact.html"
+                class="home-contact-button"
             >
-                RETURN HOME
+
+                <span class="home-contact-icon">
+                    ☎
+                </span>
+
+                <strong>
+                    CONTACT MARDY
+                </strong>
+
+                <span class="home-contact-arrow">
+                    ›
+                </span>
+
             </a>
 
         </section>
@@ -290,10 +556,111 @@
     </main>
 
 
+
+    <!-- =========================================
+         BOTTOM NAVIGATION
+    ========================================== -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="scents.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Refill
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
 </div>
 
 
+
+<!-- =========================================
+     KEEP EXISTING JAVASCRIPT
+========================================== -->
+
 <script src="script.js"></script>
+
 
 </body>
 
