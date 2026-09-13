@@ -111,92 +111,134 @@
              PRODUCT HERO
         ====================================== -->
 
-        <section class="product-hero">
+  <section class="product-hero">
+
+    <div class="product-bottle-stage">
+
+        <div
+            class="product-smoke product-smoke-blue"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="product-smoke product-smoke-gold"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="product-smoke product-smoke-green"
+            aria-hidden="true"
+        ></div>
+
+        <img
+            id="productImage"
+            src="images/IMG_AT.png"
+            alt="Never Fold Fragrance"
+            class="product-fragrance-image"
+        >
+
+    </div>
 
 
-            <div class="product-bottle-stage">
+    <div class="product-heading">
 
+        <p class="product-small-title">
+            NEVER FOLD ORIGINAL
+        </p>
 
-                <div
-                    class="product-smoke product-smoke-blue"
-                    aria-hidden="true"
-                ></div>
+        <h1 id="productName">
+            Never Fold Original
+        </h1>
 
-                <div
-                    class="product-smoke product-smoke-gold"
-                    aria-hidden="true"
-                ></div>
+        <p class="product-subtitle graffiti-text">
+            WEAR IT. SPRAY IT. NEVER FOLD.
+        </p>
 
-                <div
-                    class="product-smoke product-smoke-green"
-                    aria-hidden="true"
-                ></div>
+    </div>
 
+</section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-                <!-- LARGE CSS BOTTLE MOCKUP -->
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get("product");
 
-                <div class="perfume-bottle product-bottle">
+    const products = {
 
-                    <div class="bottle-cap"></div>
+        "amirahs-touch": {
+            name: "Amirah's Touch",
+            image: "images/IMG_AT.png"
+        },
 
+        "benitas-love": {
+            name: "Benita's Love",
+            image: "images/IMG_BL.png"
+        },
 
-                    <div class="bottle-glass">
+        "evette-my-love": {
+            name: "Evette My Love",
+            image: "images/IMG_EML.png"
+        },
 
-                        <span class="bottle-crown">
-                            ♛
-                        </span>
+        "irish-the-land": {
+            name: "Irish The Land",
+            image: "images/IMG_ITL.png"
+        },
 
-                        <span class="bottle-nf">
-                            NF
-                        </span>
+        "king-mardy-the-great": {
+            name: "King Mardy The Great",
+            image: "images/IMG_KMTG.png"
+        },
 
-                        <span
-                            class="bottle-name"
-                            id="bottleName"
-                        >
-                            NEVER FOLD
-                        </span>
+        "lilly-of-da-valley": {
+            name: "Lilly of Da Valley",
+            image: "images/IMG_LODV.png"
+        },
 
-                        <small>
-                            FRAGRANCES
-                        </small>
+        "man-of-the-hour": {
+            name: "Man of the Hour",
+            image: "images/IMG_MOTH.png"
+        },
 
-                    </div>
+        "nieko-valley": {
+            name: "Nieko Valley",
+            image: "images/IMG_NV.png"
+        },
 
-                </div>
+        "players-get-choose": {
+            name: "Players Get Choose",
+            image: "images/IMH_PGC.png"
+        },
 
+        "queen-gwen": {
+            name: "Queen Gwen",
+            image: "images/IMG_QG.png"
+        }
 
-            </div>
+    };
 
+    if (product && products[product]) {
 
+        const selected = products[product];
 
-            <!-- =================================
-                 PRODUCT NAME
-            ================================== -->
+        const productName = document.getElementById("productName");
+        const productImage = document.getElementById("productImage");
 
-            <div class="product-heading">
+        if (productName) {
+            productName.textContent = selected.name;
+        }
 
-                <p class="product-small-title">
-                    NEVER FOLD ORIGINAL
-                </p>
+        if (productImage) {
+            productImage.src = selected.image;
+            productImage.alt = selected.name;
+        }
 
+    }
 
-                <h1 id="productName">
-                    Never Fold Original
-                </h1>
-
-
-                <p class="product-subtitle graffiti-text">
-                    WEAR IT. SPRAY IT. NEVER FOLD.
-                </p>
-
-            </div>
-
-
-        </section>
-
-
+});
+</script>
+  
 
         <!-- =====================================
              PRICE
