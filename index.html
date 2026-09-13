@@ -1,207 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Never Fold Fragrances</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <!-- CSS WILL BE BUILT AFTER ALL HTML PAGES -->
-    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#02070d">
+
+    <title>
+        Never Fold Fragrances
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
 </head>
+
 
 <body>
 
-    <div class="app">
+<div class="app home-app">
 
-        <!-- =========================
-             TOP HEADER
-        ========================== -->
-        <header class="top-header">
 
-            <button class="menu-button" type="button" aria-label="Open menu">
-                ☰
-            </button>
+    <!-- =========================================
+         BACKGROUND EFFECTS
+         CSS WILL CREATE THE SMOKE
+    ========================================== -->
 
-            <div class="brand-name">
-                <h1>NEVER FOLD</h1>
-                <span>FRAGRANCES</span>
+    <div
+        class="smoke smoke-blue smoke-blue-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-blue smoke-blue-two"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-gold smoke-gold-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="smoke smoke-green smoke-green-one"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="top-header home-header">
+
+        <button
+            type="button"
+            class="menu-button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+
+        <div class="brand-name">
+
+            <strong>
+                NEVER FOLD
+            </strong>
+
+            <span>
+                FRAGRANCES
+            </span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="cart-button"
+            aria-label="Shopping cart"
+        >
+
+            <span class="cart-icon">
+                🛒
+            </span>
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HOME
+    ========================================== -->
+
+    <main class="home-page">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="home-hero">
+
+
+            <div class="home-logo-wrap">
+
+                <div
+                    class="hero-smoke hero-smoke-blue"
+                    aria-hidden="true"
+                ></div>
+
+                <div
+                    class="hero-smoke hero-smoke-gold"
+                    aria-hidden="true"
+                ></div>
+
+                <div
+                    class="hero-smoke hero-smoke-green"
+                    aria-hidden="true"
+                ></div>
+
+
+                <img
+                    src="images/img_NFlogo.jpg"
+                    alt="Never Fold Fragrances NF logo"
+                    class="home-logo"
+                >
+
             </div>
 
-            <a class="cart-button" href="cart.html" aria-label="Shopping cart">
-                🛒
-                <span class="cart-count">0</span>
+
+
+            <div class="home-brand-message">
+
+                <h1 class="home-main-title">
+
+                    <span>
+                        NEVER FOLD
+                    </span>
+
+                    <small>
+                        FRAGRANCES
+                    </small>
+
+                </h1>
+
+
+                <p class="home-tagline graffiti-text">
+
+                    WEAR IT.
+                    <br>
+
+                    SPRAY IT.
+                    <br>
+
+                    <strong>
+                        NEVER FOLD.
+                    </strong>
+
+                </p>
+
+
+                <p class="home-intro">
+                    Find the scent that matches your energy.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MAIN ACTIONS
+        ====================================== -->
+
+        <section
+            class="home-actions"
+            aria-label="Never Fold menu"
+        >
+
+
+            <!-- SHOP -->
+
+            <a
+                href="scents.html"
+                class="home-action-card action-shop"
+            >
+
+                <span class="home-action-icon">
+                    🛍️
+                </span>
+
+                <span class="home-action-small">
+                    SHOP
+                </span>
+
+                <strong>
+                    NEVER FOLD
+                    <br>
+                    SCENTS
+                </strong>
+
             </a>
 
-        </header>
 
 
-        <!-- =========================
-             HERO
-        ========================== -->
-        <main>
+            <!-- FIND YOUR SCENT -->
 
-            <section class="home-hero">
+            <a
+                href="finder.html"
+                class="home-action-card action-finder"
+            >
 
-                <div class="hero-logo">
-                    <img
-                        src="images/img_NFlogo.jpg"
-                        alt="Never Fold Fragrances NF logo"
-                    >
+                <span class="home-action-icon">
+                    🔎
+                </span>
+
+                <span class="home-action-small">
+                    WHAT'S YOUR FOLD?
+                </span>
+
+                <strong>
+                    FIND YOUR
+                    <br>
+                    SCENT
+                </strong>
+
+            </a>
+
+
+
+            <!-- VAULT -->
+
+            <a
+                href="vault.html"
+                class="home-action-card action-vault"
+            >
+
+                <span class="home-action-icon">
+                    💎
+                </span>
+
+                <span class="home-action-small">
+                    EXPLORE
+                </span>
+
+                <strong>
+                    THE SCENT
+                    <br>
+                    VAULT
+                </strong>
+
+            </a>
+
+
+
+            <!-- REFILLS -->
+
+            <a
+                href="refills.html"
+                class="home-action-card action-refill"
+            >
+
+                <span class="home-action-icon">
+                    🧴
+                </span>
+
+                <span class="home-action-small">
+                    KEEP IT GOING
+                </span>
+
+                <strong>
+                    REFILL
+                    <br>
+                    FOR $20
+                </strong>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PERFORMANCE
+        ====================================== -->
+
+        <section class="home-performance">
+
+
+            <p class="graffiti-text home-performance-title">
+                BUILT TO LAST
+            </p>
+
+
+            <div class="home-performance-grid">
+
+
+                <div class="home-performance-card performance-gold">
+
+                    <span class="performance-icon">
+                        ◷
+                    </span>
+
+                    <strong>
+                        4–8 HOURS
+                    </strong>
+
+                    <small>
+                        ON SKIN
+                    </small>
+
                 </div>
 
-                <div class="hero-copy">
-                    <p class="hero-eyebrow">NEVER FOLD FRAGRANCES</p>
 
-                    <h2>
-                        WEAR IT.<br>
-                        SPRAY IT.<br>
-                        <span>NEVER FOLD.</span>
-                    </h2>
 
-                    <p class="hero-description">
-                        Find the scent that matches your energy.
-                    </p>
+                <div class="home-performance-card performance-blue">
+
+                    <span class="performance-icon">
+                        ♧
+                    </span>
+
+                    <strong>
+                        2–4 DAYS
+                    </strong>
+
+                    <small>
+                        ON CLOTHES
+                    </small>
+
                 </div>
 
-            </section>
 
 
-            <!-- =========================
-                 MAIN HOME BUTTONS
-            ========================== -->
-            <section class="home-actions">
+                <div class="home-performance-card performance-green">
 
-                <!-- SHOP -->
-                <a href="scents.html" class="home-action-card">
-                    <div class="action-icon">🛍️</div>
-
-                    <div class="action-text">
-                        <span>SHOP</span>
-                        <strong>NEVER FOLD SCENTS</strong>
-                    </div>
-                </a>
-
-
-                <!-- FIND YOUR SCENT -->
-                <a href="finder.html" class="home-action-card">
-                    <div class="action-icon">🔎</div>
-
-                    <div class="action-text">
-                        <span>WHAT'S YOUR FOLD?</span>
-                        <strong>FIND YOUR SCENT</strong>
-                    </div>
-                </a>
-
-
-                <!-- SCENT VAULT -->
-                <a href="vault.html" class="home-action-card">
-                    <div class="action-icon">💎</div>
-
-                    <div class="action-text">
-                        <span>EXPLORE</span>
-                        <strong>THE SCENT VAULT</strong>
-                    </div>
-                </a>
-
-
-                <!-- REFILLS -->
-                <a href="refills.html" class="home-action-card">
-                    <div class="action-icon">🧴</div>
-
-                    <div class="action-text">
-                        <span>KEEP IT GOING</span>
-                        <strong>REFILL FOR $20</strong>
-                    </div>
-                </a>
-
-            </section>
-
-
-            <!-- =========================
-                 HOME & CAR
-            ========================== -->
-            <section class="home-car-banner">
-
-                <a href="home-car.html">
-
-                    <div class="home-car-icons">
+                    <div class="use-icons">
+                        <span>👤</span>
                         <span>🚗</span>
-                        <span>🏠</span>
+                        <span>⌂</span>
                     </div>
 
-                    <div>
-                        <span>MORE WAYS TO USE YOUR SCENT</span>
-                        <strong>HOME &amp; CAR</strong>
-                    </div>
+                    <strong>
+                        3 WAYS TO USE IT
+                    </strong>
 
-                    <span class="banner-arrow">›</span>
+                    <small>
+                        BODY • CAR • HOME
+                    </small>
 
-                </a>
+                </div>
 
-            </section>
+            </div>
 
-
-            <!-- =========================
-                 CONTACT MARDY
-            ========================== -->
-            <section class="contact-banner">
-
-                <a href="contact.html">
-
-                    <span class="contact-icon">☎</span>
-
-                    <div>
-                        <span>QUESTIONS OR ORDERS?</span>
-                        <strong>CONTACT MARDY</strong>
-                    </div>
-
-                    <span class="banner-arrow">›</span>
-
-                </a>
-
-            </section>
-
-        </main>
+        </section>
 
 
-        <!-- =========================
-             MOBILE BOTTOM NAVIGATION
-        ========================== -->
-        <nav class="bottom-nav">
 
-            <a href="index.html" class="nav-item active">
-                <span class="nav-icon">⌂</span>
-                <span>Home</span>
-            </a>
+        <!-- =====================================
+             CONTACT MARDY
+        ====================================== -->
 
-            <a href="scents.html" class="nav-item">
-                <span class="nav-icon">♙</span>
-                <span>Scents</span>
-            </a>
+      <section class="home-contact-section">
 
-            <a href="vault.html" class="nav-item">
-                <span class="nav-icon">◇</span>
-                <span>Vault</span>
-            </a>
+    <p class="home-contact-question">
+        QUESTIONS?
+    </p>
 
-            <a href="refills.html" class="nav-item">
-                <span class="nav-icon">♙</span>
-                <span>Refill</span>
-            </a>
+    <a
+        href="contact.html"
+        class="home-contact-button"
+    >
+        <span class="home-contact-icon">
+            ☎
+        </span>
 
-            <a href="contact.html" class="nav-item">
-                <span class="nav-icon">☎</span>
-                <span>Contact</span>
-            </a>
+        <strong>
+            CONTACT MARDY
+        </strong>
 
-        </nav>
+        <span class="home-contact-arrow">
+            ›
+        </span>
+    </a>
 
-    </div>
+</section>
+
+        <!-- =====================================
+             BOTTOM BRAND STATEMENT
+        ====================================== -->
+
+        <section class="home-closing">
+
+            <p class="graffiti-text">
+                NEVER FOLD
+            </p>
+
+            <span class="stay-scented-text">
+                Stay Scented
+            </span>
+
+            <small>
+                SAME ENERGY. DIFFERENT STORIES.
+            </small>
+
+        </section>
 
 
-    <!-- JAVASCRIPT WILL BE BUILT LAST -->
-    <script src="script.js"></script>
+    </main>
+
+
+
+    <!-- =========================================
+         BOTTOM NAVIGATION
+    ========================================== -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item active"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="scents.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Scents
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="vault.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ◇
+            </span>
+
+            <span>
+                Vault
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="refills.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♙
+            </span>
+
+            <span>
+                Refill
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="contact.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ☎
+            </span>
+
+            <span>
+                Contact
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+</div>
+
+
+
+<!-- =========================================
+     KEEP EXISTING JAVASCRIPT
+     DO NOT CHANGE CART/CALCULATION LOGIC
+========================================== -->
+
+<script src="script.js"></script>
+
 
 </body>
+
 </html>
