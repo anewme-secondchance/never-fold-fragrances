@@ -684,26 +684,82 @@
 
                 <div class="payment-coming-box">
 
-                    <span class="payment-lock">
-                        🔒
-                    </span>
+                   <div class="demo-payment-box">
 
+    <div class="demo-payment-header">
+        <strong>CARD PAYMENT</strong>
+        <span>DEMO ONLY</span>
+    </div>
 
-                    <div>
+    <p class="demo-payment-note">
+        Secure card payments can be connected through Square or Stripe.
+    </p>
 
-                        <strong>
-                            SECURE PAYMENT
-                        </strong>
+    <label for="demoCardName">
+        NAME ON CARD
+    </label>
 
-                        <p>
-                            Payment checkout will appear here
-                            once the payment provider is connected.
-                        </p>
+    <input
+        type="text"
+        id="demoCardName"
+        placeholder="MARDY GOSS"
+        autocomplete="off"
+    >
 
-                    </div>
+    <label for="demoCardNumber">
+        CARD NUMBER
+    </label>
 
-                </div>
+    <input
+        type="text"
+        id="demoCardNumber"
+        placeholder="1234 5678 9012 3456"
+        autocomplete="off"
+    >
 
+    <div class="demo-card-row">
+
+        <div>
+            <label for="demoExpiration">
+                EXPIRATION
+            </label>
+
+            <input
+                type="text"
+                id="demoExpiration"
+                placeholder="MM / YY"
+                autocomplete="off"
+            >
+        </div>
+
+        <div>
+            <label for="demoCvv">
+                CVV
+            </label>
+
+            <input
+                type="text"
+                id="demoCvv"
+                placeholder="123"
+                autocomplete="off"
+            >
+        </div>
+
+    </div>
+
+    <button
+        type="button"
+        class="demo-pay-button"
+        id="demoPayButton"
+    >
+        PAY SECURELY
+    </button>
+
+    <small class="demo-payment-warning">
+        DEMO ONLY — DO NOT ENTER REAL CARD INFORMATION
+    </small>
+
+</div>
 
 
                 <!--
