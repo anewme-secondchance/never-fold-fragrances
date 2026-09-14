@@ -5164,3 +5164,121 @@ button:disabled,
     font-weight: 900;
     line-height: 1.15;
 }
+
+/* =========================================
+   NEVER FOLD EXTRAS PAGE
+========================================= */
+
+.extras-page {
+    width: 100%;
+    background: #000;
+    padding-bottom: 25px;
+}
+
+
+/* EXTRAS GRAFFITI HEADING */
+
+.extras-heading {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.extras-heading-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* PRODUCT CARDS */
+
+.extras-product-card {
+    width: calc(100% - 24px);
+    margin: 18px auto;
+    padding: 0 0 20px;
+    background: #050a12;
+    border: 2px solid #006cff;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* PRODUCT IMAGE */
+
+.extras-product-image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.extras-product-info {
+    padding: 18px 14px 0;
+    text-align: center;
+}
+
+.extras-product-info h2 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.extras-product-subtitle {
+    margin: 5px 0;
+    color: #ffe600;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.extras-product-price {
+    margin: 12px 0;
+    color: #ffe600;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.extras-product-info p {
+    font-weight: 800;
+}
+
+.extras-contact-price {
+    color: #ffe600;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 12px 0 18px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .extras-heading-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .extras-product-card {
+        width: calc(100% - 20px);
+        margin: 14px auto;
+    }
+
+    .extras-product-info h2 {
+        font-size: 20px;
+    }
+
+}
