@@ -2208,3 +2208,17 @@ initExtrasPage();
   );
 
 })();
+
+const demoPayButton =
+  document.querySelector(
+    "#demoPayButton"
+  );
+
+demoPayButton?.addEventListener(
+  "click",
+  () => {
+    alert(
+      "DEMO ONLY — Secure card processing will be connected through Square or Stripe."
+    );
+  }
+);
