@@ -1482,23 +1482,11 @@ p {
 .fragrance-details h3,
 .scent-graffiti-name {
     margin: 0;
-
-    font-family: Impact, "Arial Black", sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    font-style: italic;
-    line-height: 1.15;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-
     color: #ffffff;
-
-    -webkit-text-stroke: 1px #006dff;
-
-    text-shadow:
-        2px 2px 0 #006dff,
-        -1px -1px 0 #006dff,
-        0 0 7px #00a8ff;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-transform: none;
 }
 
 
