@@ -5137,3 +5137,26 @@ button:disabled,
         0 0 10px rgba(0, 108, 255, 0.75);
     transform: skew(-5deg);
 }
+
+.scents-graffiti-heading {
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px 8px;
+}
+
+.scents-count {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffe600;
+}
+
+.choose-scent-image {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    margin: 0 auto;
+}
