@@ -5339,3 +5339,27 @@ button:disabled,
 <p class="nf-closing-title">
     NEVER FOLD
 </p>
+
+/* CENTER HOMEPAGE HEADER BRAND */
+
+.home-page .top-header,
+.home-app .top-header {
+    position: relative;
+}
+
+.home-page .brand-name,
+.home-app .brand-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
+}
+
+.home-page .brand-name strong,
+.home-page .brand-name span,
+.home-app .brand-name strong,
+.home-app .brand-name span {
+    display: block;
+    text-align: center;
+}
