@@ -1479,18 +1479,26 @@ p {
     justify-content: center;
 }
 
-
-.fragrance-details h3 {
-
+.fragrance-details h3,
+.scent-graffiti-name {
     margin: 0;
 
-    color: var(--white);
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 
-    font-size: 14px;
+    color: #ffffff;
 
-    line-height: 1.1;
+    -webkit-text-stroke: 1px #006dff;
 
-    text-transform: none;
+    text-shadow:
+        2px 2px 0 #006dff,
+        -1px -1px 0 #006dff,
+        0 0 7px #00a8ff;
 }
 
 
