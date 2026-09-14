@@ -5068,18 +5068,9 @@ button:disabled,
             0 12px;
     }
 
-   /* THIRD BOTTLE — REFILL */
 
-.nf-home-actions .nf-image-action:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
 
-    position: relative;
 
-    /* CHANGE THESE TO MOVE THE REFILL BOTTLE */
-    left: 0px;     /* + moves RIGHT, - moves LEFT */
-    top: 0px;      /* + moves DOWN, - moves UP */
-}
 }
 
 .product-fragrance-image {
