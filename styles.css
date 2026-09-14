@@ -5143,3 +5143,33 @@ button:disabled,
         margin: 0;
     }
 }
+
+/* VAULT NEW HERO IMAGE */
+.vault-image-hero {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.vault-main-image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+}
+
+/* HIDE "THE SCENT VAULT" INSIDE EVERY ITEM */
+.vault-item-label {
+    display: none;
+}
+
+/* BIGGER VAULT FRAGRANCE NAMES */
+.vault-item-header strong {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.15;
+}
