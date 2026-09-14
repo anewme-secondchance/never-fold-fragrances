@@ -5468,3 +5468,108 @@ button:disabled,
         0 0 10px rgba(0,109,255,.65),
         var(--gold-glow);
 }
+
+/* =========================================
+   CHECKOUT — DEMO CARD PAYMENT
+========================================= */
+
+.demo-payment-box {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid rgba(255, 212, 71, 0.45);
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.demo-payment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.demo-payment-header strong {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+}
+
+.demo-payment-header span {
+    padding: 4px 7px;
+    border-radius: 6px;
+    background: #ffd447;
+    color: #050505;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.demo-payment-note {
+    margin: 0 0 14px;
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.demo-payment-box label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+}
+
+.demo-payment-box input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background: #0c0c0c;
+    color: #ffffff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.demo-card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.demo-pay-button {
+    width: 100%;
+    min-height: 54px;
+    margin-top: 18px;
+    border: 1px solid #fff0a3;
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffec95,
+            #e4b026 52%,
+            #bd8204 100%
+        );
+
+    color: #050505;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.7),
+        var(--gold-glow);
+}
+
+.demo-payment-warning {
+    display: block;
+    margin-top: 10px;
+    color: #ffd447;
+    font-size: 9px;
+    font-weight: 900;
+    text-align: center;
+}
