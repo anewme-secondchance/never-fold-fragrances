@@ -26,8 +26,7 @@
   const VAULT_PRICE = 70;
   const SHIPPING_RATE = 6.99;
 
-  // DO NOT invent a tax rate.
-  const TAX_RATE = null;
+
 
   const ORIGINALS = {
     "amirahs-touch": "Amirah's Touch",
@@ -284,50 +283,24 @@
        Shipping is charged exactly ONCE.
        Empty cart = $0 shipping.
     */
-    const shipping =
-      clean.length > 0
-        ? SHIPPING_RATE
-        : 0;
+ const shipping = 0;
 
-    const taxConfigured =
-      typeof TAX_RATE === "number";
+const total =
+  Number(
+    (
+      subtotal +
+      shipping
+    ).toFixed(2)
+  );
 
-    const tax =
-      taxConfigured
-        ? Number(
-            (
-              subtotal *
-              TAX_RATE
-            ).toFixed(2)
-          )
-        : 0;
+return {
+  itemCount,
+  subtotal,
+  shipping,
+  total
+};
 
-    const totalBeforeTax =
-      Number(
-        (
-          subtotal +
-          shipping
-        ).toFixed(2)
-      );
 
-    const total =
-      Number(
-        (
-          subtotal +
-          shipping +
-          tax
-        ).toFixed(2)
-      );
-
-    return {
-      itemCount,
-      subtotal,
-      shipping,
-      tax,
-      taxConfigured,
-      totalBeforeTax,
-      total
-    };
   }
 
   /* =========================================================
@@ -1279,10 +1252,7 @@
         0
       );
 
-      setText(
-        "#cartTax",
-        "Calculated at checkout"
-      );
+
 
       setMoney(
         "#cartTotal",
@@ -1461,16 +1431,12 @@
       totals.shipping
     );
 
-    setText(
-      "#cartTax",
-      "Calculated at checkout"
-    );
+   setMoney(
+  "#cartTotal",
+  totals.total
+);
 
-    setMoney(
-      "#cartTotal",
-      totals.totalBeforeTax
-    );
-
+  
     updateCartBadges(
       cart
     );
@@ -1672,7 +1638,7 @@
       createdAt:
         new Date()
           .toISOString(),
-
+deliveryMethod: getFieldValue("#deliveryMethod"),
       customer: {
         name:
           fullName,
