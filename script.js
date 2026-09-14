@@ -2029,7 +2029,96 @@
         "NOT PROCESSED";
     }
   }
+/* =========================================================
+   EXTRAS PAGE
+   ========================================================= */
 
+function initExtrasPage() {
+  const card =
+    qs(".extras-product-card");
+
+  if (!card) return;
+
+  const minus =
+    qs(".extras-minus", card);
+
+  const plus =
+    qs(".extras-plus", card);
+
+  const qtyEl =
+    qs(".extras-quantity-number", card);
+
+  const add =
+    qs(".extras-add-cart", card);
+
+  const getQty = () =>
+    clampQuantity(
+      qtyEl?.textContent || 1
+    );
+
+  const setQty = value => {
+    if (qtyEl) {
+      qtyEl.textContent =
+        clampQuantity(value);
+    }
+  };
+
+  minus?.addEventListener(
+    "click",
+    () => {
+      setQty(
+        getQty() - 1
+      );
+    }
+  );
+
+  plus?.addEventListener(
+    "click",
+    () => {
+      setQty(
+        getQty() + 1
+      );
+    }
+  );
+
+  add?.addEventListener(
+    "click",
+    event => {
+      event.preventDefault();
+
+      addItem({
+        id:
+          "never-fold-pro-2",
+
+        name:
+          "Never Fold Pro 2",
+
+        type:
+          "Never Fold Extras",
+
+        unitPrice:
+          50,
+
+        quantity:
+          getQty()
+      });
+
+      const originalText =
+        add.textContent;
+
+      add.textContent =
+        "ADDED ✓";
+
+      setTimeout(
+        () => {
+          add.textContent =
+            originalText;
+        },
+        900
+      );
+    }
+  );
+}
   /* =========================================================
      GLOBAL NEVER FOLD FUNCTIONS
      ========================================================= */
@@ -2085,7 +2174,9 @@
       initVaultPage();
 
       initRefillPage();
-
+       
+initExtrasPage();
+       
       initFinderPage();
 
       renderCart();
