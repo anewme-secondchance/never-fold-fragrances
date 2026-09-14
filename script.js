@@ -1491,57 +1491,86 @@ return {
     );
   }
 
-  function renderCheckout() {
-    const page =
-      qs(".checkout-page");
+function renderCheckout() {
+  const page = qs(".checkout-page");
 
-    if (!page) {
-      return;
-    }
+  if (!page) {
+    return;
+  }
 
-    const cart =
-      loadCart();
+  const cart = loadCart();
+  const totals = calculateCart(cart);
 
-    const totals =
-      calculateCart(
-        cart
-      );
-
-    const itemsContainer =
-      first(
-        "#checkoutItems",
-        "#orderItems",
-        "[data-checkout-items]"
-      );
-
-    renderOrderItems(
-      itemsContainer,
-      cart
+  const itemsContainer =
+    first(
+      "#checkoutItems",
+      "#orderItems",
+      "[data-checkout-items]"
     );
 
-    const empty =
-      first(
-        "#checkoutEmpty",
-        "#emptyOrder",
-        "[data-checkout-empty]"
-      );
+  renderOrderItems(
+    itemsContainer,
+    cart
+  );
 
-    if (empty) {
-      empty.hidden =
-        cart.length > 0;
+  const empty =
+    first(
+      "#checkoutEmpty",
+      "#emptyOrder",
+      "[data-checkout-empty]"
+    );
 
-      empty.classList.toggle(
-        "hidden",
-        cart.length > 0
-      );
+  if (empty) {
+    empty.hidden =
+      cart.length > 0;
+
+    empty.classList.toggle(
+      "hidden",
+      cart.length > 0
+    );
+  }
+
+  setMoney(
+    [
+      "#checkoutSubtotal",
+      "#orderSubtotal"
+    ],
+    totals.subtotal
+  );
+
+  const pickupButton =
+    qs("#pickupButton");
+
+  const shippingButton =
+    qs("#shippingButton");
+
+  const deliveryMethod =
+    qs("#deliveryMethod");
+
+  const street = qs("#street");
+  const city = qs("#city");
+  const state = qs("#state");
+  const zip = qs("#zip");
+
+  function updateDelivery(method) {
+
+    const shipping =
+      method === "shipping" && cart.length
+        ? SHIPPING_RATE
+        : 0;
+
+    if (deliveryMethod) {
+      deliveryMethod.value = method;
     }
 
-    setMoney(
-      [
-        "#checkoutSubtotal",
-        "#orderSubtotal"
-      ],
-      totals.subtotal
+    pickupButton?.classList.toggle(
+      "active",
+      method === "pickup"
+    );
+
+    shippingButton?.classList.toggle(
+      "active",
+      method === "shipping"
     );
 
     setMoney(
@@ -1549,53 +1578,78 @@ return {
         "#checkoutShipping",
         "#orderShipping"
       ],
-      totals.shipping
-    );
-
-    const taxElements = [
-      qs("#checkoutTax"),
-      qs("#orderTax")
-    ].filter(Boolean);
-
-    taxElements.forEach(
-      element => {
-        element.textContent =
-          totals.taxConfigured
-            ? money(totals.tax)
-            : "Pending";
-      }
+      shipping
     );
 
     setMoney(
       [
         "#checkoutTotal",
-        "#orderTotal",
-        "#checkoutTotalBeforeTax"
+        "#orderTotal"
       ],
-      totals.taxConfigured
-        ? totals.total
-        : totals.totalBeforeTax
+      totals.subtotal + shipping
     );
 
-    const placeOrderButton =
-      first(
-        "#placeOrderButton",
-        "#placeOrder",
-        ".place-order-button"
-      );
+    const needsAddress =
+      method === "shipping";
 
-    if (
-      placeOrderButton &&
-      !cart.length
-    ) {
-      placeOrderButton.disabled =
-        true;
-    }
-
-    initCheckoutSubmission(
-      cart
-    );
+    [street, city, state, zip]
+      .forEach(field => {
+        if (field) {
+          field.required =
+            needsAddress;
+        }
+      });
   }
+
+  pickupButton?.addEventListener(
+    "click",
+    () => {
+      updateDelivery("pickup");
+    }
+  );
+
+  shippingButton?.addEventListener(
+    "click",
+    () => {
+      updateDelivery("shipping");
+    }
+  );
+
+  setMoney(
+    [
+      "#checkoutShipping",
+      "#orderShipping"
+    ],
+    0
+  );
+
+  setMoney(
+    [
+      "#checkoutTotal",
+      "#orderTotal"
+    ],
+    totals.subtotal
+  );
+
+  const placeOrderButton =
+    first(
+      "#placeOrderButton",
+      "#placeOrder",
+      ".place-order-button"
+    );
+
+  if (
+    placeOrderButton &&
+    !cart.length
+  ) {
+    placeOrderButton.disabled =
+      true;
+  }
+
+  initCheckoutSubmission(
+    cart
+  );
+}
 
   /* =========================================================
      BUILD ORDER
