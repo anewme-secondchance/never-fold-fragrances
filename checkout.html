@@ -254,7 +254,57 @@
 
             </section>
 
+<!-- =================================
+     DELIVERY METHOD
+================================== -->
 
+<section class="checkout-section">
+
+    <div class="checkout-section-heading">
+
+        <span class="checkout-step-number">
+            2
+        </span>
+
+        <div>
+            <small>ORDER METHOD</small>
+            <h2>SHIPPING OR PICKUP</h2>
+        </div>
+
+    </div>
+
+    <div class="delivery-method-options">
+
+        <button
+            type="button"
+            class="delivery-method-button"
+            id="pickupButton"
+            data-delivery-method="pickup"
+        >
+            PICKUP
+            <small>FREE</small>
+        </button>
+
+        <button
+            type="button"
+            class="delivery-method-button"
+            id="shippingButton"
+            data-delivery-method="shipping"
+        >
+            SHIPPING
+            <small>+$6.99</small>
+        </button>
+
+    </div>
+
+    <input
+        type="hidden"
+        id="deliveryMethod"
+        name="deliveryMethod"
+        value=""
+    >
+
+</section>
 
             <!-- =================================
                  SHIPPING ADDRESS
@@ -575,18 +625,6 @@
 
 
 
-                <div class="checkout-summary-row">
-
-                    <span>
-                        TAX
-                    </span>
-
-                    <strong id="checkoutTax">
-                        Pending
-                    </strong>
-
-                </div>
-
 
 
                 <div class="checkout-grand-total">
@@ -598,7 +636,7 @@
                         </span>
 
                         <small>
-                            Before tax until tax is configured
+                         ORDER TOTAL
                         </small>
 
                     </div>
