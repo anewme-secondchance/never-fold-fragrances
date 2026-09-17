@@ -5644,7 +5644,7 @@ background: #ffff00;
 
 .checkout-button {
     background: #05080d !important;
-    color: #ffff00 !important;
+    color: #ffffff !important;
     border: 2px solid #ffff00 !important;
     box-shadow:
         0 0 10px rgba(255, 255, 0, 0.35),
@@ -5654,5 +5654,5 @@ background: #ffff00;
 .checkout-button:hover,
 .checkout-button:active {
     background: #0a111a !important;
-    color: #ffff00 !important;
+    color: #ffffff !important;
 }
