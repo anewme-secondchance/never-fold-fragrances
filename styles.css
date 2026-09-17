@@ -5717,3 +5717,28 @@ background: #ffff00;
     border: 1px solid #ffff00 !important;
     color: #ffffff !important;
 }
+
+/* =========================================
+   CONTACT MARDY — GLOBAL CONSISTENT STYLE
+========================================= */
+
+.nf-contact-button,
+.contact-mardy-button,
+.cart-contact-button,
+.vault-contact-button,
+.refill-contact-button,
+.extras-contact-button {
+    background: #05080d !important;
+    border: 2px solid #39ff14 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.25) !important;
+}
+
+.nf-contact-button strong,
+.contact-mardy-button strong,
+.cart-contact-button strong,
+.vault-contact-button strong,
+.refill-contact-button strong,
+.extras-contact-button strong {
+    color: #ffffff !important;
+}
