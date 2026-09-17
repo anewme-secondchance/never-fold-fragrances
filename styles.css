@@ -5795,3 +5795,26 @@ background: #ffff00;
 .refill-add-cart span {
     color: #ffffff !important;
 }
+
+/* =========================================
+   EXTRAS — WHITE WORDS / KEEP YELLOW OUTLINES
+========================================= */
+
+.extras-product-card h2,
+.extras-product-subtitle,
+.extras-product-price,
+.extras-color-title,
+.extras-contact-price {
+    color: #ffffff !important;
+}
+
+.extras-color-button {
+    color: #ffffff !important;
+}
+
+/* Selected color button stays dark */
+.extras-color-button.active {
+    background: #05080d !important;
+    color: #ffffff !important;
+    border-color: #ffff00 !important;
+}
