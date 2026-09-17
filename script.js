@@ -6,7 +6,7 @@
    Never Fold Original Bottle = $30
    Never Fold Original Refill = $20
    Scent Vault Item = $70
-   Flat shipping = $6.99 (ONCE per non-empty order)
+   Shipping = $6.99 when SHIPPING is selected at checkout
 
  
    ========================================================= */
@@ -276,10 +276,10 @@
         ).toFixed(2)
       );
 
-    /*
-       Shipping is charged exactly ONCE.
-       Empty cart = $0 shipping.
-    */
+ /*
+   Shipping is added at checkout
+   only when SHIPPING is selected.
+*/
  const shipping = 0;
 
 const total =
@@ -2016,7 +2016,11 @@ saveOrderAndGoToReceipt();
       order.customer?.phone ||
       ""
     );
-
+setText(
+  "#receiptPaymentMethod",
+  order.paymentMethod ||
+  ""
+);
     const items =
       qs("#receiptItems");
 
@@ -2078,10 +2082,12 @@ saveOrderAndGoToReceipt();
         .filter(Boolean)
         .join(", ");
 
-    setText(
-      "#receiptAddress",
-      address
-    );
+  setText(
+  "#receiptAddress",
+  order.deliveryMethod === "pickup"
+    ? "PICKUP"
+    : address
+);
 
     setText(
       "#shippingAddress",
@@ -2186,22 +2192,25 @@ add?.addEventListener(
     const color =
       selectedColor.dataset.color;
 
-    addItem({
-      id:
-        `never-fold-pro-2-${slugify(color)}`,
+    addItem(
+  {
+    id:
+      `never-fold-pro-2-${slugify(color)}`,
 
-      name:
-        `Never Fold Pro 2 — ${color}`,
+    name:
+      `Never Fold Pro 2 — ${color}`,
 
-      type:
-        "Never Fold Extras",
+    type:
+      "Never Fold Extras",
 
-      unitPrice:
-        50,
+    unitPrice:
+      50,
 
-      quantity:
-        getQty()
-    });
+    quantity:
+      getQty()
+  },
+  true
+);
 
       const originalText =
         add.textContent;
