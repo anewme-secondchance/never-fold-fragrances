@@ -5818,3 +5818,67 @@ background: #ffff00;
     color: #ffffff !important;
     border-color: #ffff00 !important;
 }
+
+/* =========================================
+   NEVER FOLD CHECKOUT — PAYMENT METHODS
+========================================= */
+
+.neverfold-payment-box {
+    width: 100%;
+}
+
+.payment-choice-title {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.payment-method-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.payment-method-button {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 8px;
+
+    background: #05080d;
+    border: 2px solid #ffff00;
+    border-radius: 8px;
+
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+}
+
+.payment-method-button.active {
+    background: #ffff00;
+    border-color: #ffff00;
+    color: #05080d;
+}
+
+.payment-instructions {
+    margin-top: 14px;
+    padding: 14px;
+
+    background: #05080d;
+    border: 1px solid #ffff00;
+    border-radius: 8px;
+
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.payment-instructions strong {
+    color: #ffffff;
+    font-weight: 900;
+}
