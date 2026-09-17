@@ -5629,7 +5629,7 @@ button:disabled,
 .extras-color-button:hover,
 .extras-color-button.active {
     border-color: #ffd447;
-    background: #006dff;
-    color: #ffffff;
+    background: #07111c;
+    color: #ffd447;
     box-shadow: 0 0 12px rgba(255, 212, 71, 0.45);
 }
