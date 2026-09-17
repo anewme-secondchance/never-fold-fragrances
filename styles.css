@@ -5750,3 +5750,33 @@ background: #ffff00;
 .vault-letter-title {
     color: #ffffff !important;
 }
+
+/* =========================================
+   CONTACT MARDY — YELLOW
+========================================= */
+
+.nf-contact-button {
+    background: #05080d !important;
+    border: 2px solid #ffff00 !important;
+    color: #ffff00 !important;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.30) !important;
+}
+
+.nf-contact-button strong,
+.nf-contact-button span {
+    color: #ffff00 !important;
+}
+
+
+/* =========================================
+   ADD TO CART — DARK / YELLOW OUTLINE
+========================================= */
+
+.extras-add-cart,
+.refill-add-cart,
+.vault-add-cart {
+    background: #05080d !important;
+    border: 2px solid #ffff00 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.30) !important;
+}
