@@ -2071,6 +2071,23 @@ function initExtrasPage() {
   const add =
     qs(".extras-add-cart", card);
 
+
+   const colorButtons =
+  qsa(".extras-color-button", card);
+
+colorButtons.forEach(button => {
+  button.addEventListener(
+    "click",
+    () => {
+      colorButtons.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+    }
+  );
+});
+   
   const getQty = () =>
     clampQuantity(
       qtyEl?.textContent || 1
@@ -2234,23 +2251,3 @@ demoPayButton?.addEventListener(
   }
 );
 
-/* =========================================
-   NEVER FOLD PRO 2 — COLOR SELECTION
-========================================= */
-
-const extrasColorButtons =
-    document.querySelectorAll(".extras-color-button");
-
-extrasColorButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        extrasColorButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-    });
-
-});
