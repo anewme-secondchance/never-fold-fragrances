@@ -4672,7 +4672,21 @@ color: #ffff00;
 
     border-radius: 7px;
 
-    background: #ffff00;
+ .vault-item {
+    overflow: hidden;
+
+    border:
+        1px solid rgba(160, 190, 220, 0.34);
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #101820,
+            #0b1117
+        );
+
 }
 
 
