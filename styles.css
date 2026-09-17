@@ -5656,3 +5656,43 @@ background: #ffff00;
     background: #0a111a !important;
     color: #ffffff !important;
 }
+
+/* =========================================
+   VAULT CLEAN DARK + YELLOW OUTLINE
+   MATCH BUTTON WIDTHS
+========================================= */
+
+/* Vault scent rows */
+.vault-item {
+    background: #070b10 !important;
+    border: 1px solid #ffff00 !important;
+}
+
+/* Initial boxes — AF, AM, AG, etc. */
+.vault-initial {
+    background: #070b10 !important;
+    color: #ffff00 !important;
+    border: 1px solid #ffff00 !important;
+}
+
+/* Expanded scent area */
+.vault-item-details {
+    background: #05080d !important;
+}
+
+/* Add to cart */
+.vault-add-cart {
+    background: #05080d !important;
+    color: #ffffff !important;
+    border: 2px solid #ffff00 !important;
+}
+
+/* Make checkout + continue shopping same width */
+.checkout-button,
+.continue-shopping {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
