@@ -37,7 +37,7 @@
     "lilly-of-da-valley": "Lilly of Da Valley",
     "man-of-the-hour": "Man of the Hour",
     "nieko-valley": "Nieko Valley",
-    "players-get-choose": "Players Get Choose",
+    "players-get-choose": "Players Get Chose",
     "queen-gwen": "Queen Gwen"
   };
 
