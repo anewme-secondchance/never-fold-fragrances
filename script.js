@@ -2073,19 +2073,20 @@ function initExtrasPage() {
 
 
    const colorButtons =
-  qsa(".extras-color-button", card);
+  card.querySelectorAll(".extras-color-button");
 
 colorButtons.forEach(button => {
-  button.addEventListener(
-    "click",
-    () => {
-      colorButtons.forEach(btn => {
-        btn.classList.remove("active");
-      });
 
-      button.classList.add("active");
-    }
-  );
+  button.addEventListener("click", function () {
+
+    colorButtons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    this.classList.add("active");
+
+  });
+
 });
    
   const getQty = () =>
