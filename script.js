@@ -730,22 +730,25 @@ return {
               VAULT_PRICE
             );
 
-          addItem({
-            id:
-              `vault-${slugify(brand)}`,
+         addItem(
+  {
+    id:
+      `never-fold-pro-2-${slugify(color)}`,
 
-            name:
-              brand,
+    name:
+      `Never Fold Pro 2 — ${color}`,
 
-            type:
-              "Scent Vault",
+    type:
+      "Never Fold Extras",
 
-            unitPrice:
-              price,
+    unitPrice:
+      50,
 
-            quantity:
-              getQuantity()
-          });
+    quantity:
+      getQty()
+  },
+  true
+);
 
           const originalText =
             addButton.textContent;
