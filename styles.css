@@ -5780,3 +5780,18 @@ background: #ffff00;
     color: #ffffff !important;
     box-shadow: 0 0 10px rgba(255, 255, 0, 0.30) !important;
 }
+
+/* =========================================
+   REFILL ADD TO CART — FINAL STYLE
+========================================= */
+
+.refill-add-cart {
+    background: #05080d !important;
+    color: #ffffff !important;
+    border: 2px solid #ffff00 !important;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.30) !important;
+}
+
+.refill-add-cart span {
+    color: #ffffff !important;
+}
