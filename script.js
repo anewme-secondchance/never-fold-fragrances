@@ -2101,27 +2101,38 @@ function initExtrasPage() {
     }
   );
 
-  add?.addEventListener(
-    "click",
-    event => {
-      event.preventDefault();
+add?.addEventListener(
+  "click",
+  event => {
+    event.preventDefault();
 
-      addItem({
-        id:
-          "never-fold-pro-2",
+    const selectedColor =
+      qs(".extras-color-button.active", card);
 
-        name:
-          "Never Fold Pro 2",
+    if (!selectedColor) {
+      alert("Choose a color first.");
+      return;
+    }
 
-        type:
-          "Never Fold Extras",
+    const color =
+      selectedColor.dataset.color;
 
-        unitPrice:
-          50,
+    addItem({
+      id:
+        `never-fold-pro-2-${slugify(color)}`,
 
-        quantity:
-          getQty()
-      });
+      name:
+        `Never Fold Pro 2 — ${color}`,
+
+      type:
+        "Never Fold Extras",
+
+      unitPrice:
+        50,
+
+      quantity:
+        getQty()
+    });
 
       const originalText =
         add.textContent;
