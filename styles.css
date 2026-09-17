@@ -4662,7 +4662,6 @@ color: #ffff00;
     gap: 6px;
 }
 
-
 .vault-item {
 
     overflow: hidden;
@@ -4671,10 +4670,12 @@ color: #ffff00;
         1px solid rgba(160, 190, 220, 0.34);
 
     border-radius: 7px;
+}
 
 /* =========================================
    VAULT — KEEP BRAND ROWS DARK
 ========================================= */
+
 
 .vault-item {
     background:
