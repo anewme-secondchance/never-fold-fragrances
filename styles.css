@@ -5701,3 +5701,19 @@ background: #ffff00;
 .stay-scented-text {
     color: #39ff14 !important;
 }
+
+/* =========================================
+   VAULT SCENT ROWS — CLEANER LOOK
+========================================= */
+
+/* Remove yellow outline from full scent rows */
+.vault-item {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Keep small initials box yellow outline */
+.vault-initial {
+    background: #070b10 !important;
+    border: 1px solid #ffff00 !important;
+    color: #ffffff !important;
+}
