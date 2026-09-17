@@ -4672,21 +4672,28 @@ color: #ffff00;
 
     border-radius: 7px;
 
- .vault-item {
-    overflow: hidden;
+/* =========================================
+   VAULT — KEEP BRAND ROWS DARK
+========================================= */
 
-    border:
-        1px solid rgba(160, 190, 220, 0.34);
-
-    border-radius: 7px;
-
+.vault-item {
     background:
         linear-gradient(
             180deg,
             #101820,
             #0b1117
-        );
+        ) !important;
+}
 
+.vault-item-icon {
+    background:
+        linear-gradient(
+            180deg,
+            #10243a,
+            #07121f
+        ) !important;
+
+    border-color: #00a8ff !important;
 }
 
 
