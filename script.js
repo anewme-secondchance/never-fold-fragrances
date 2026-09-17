@@ -8,10 +8,7 @@
    Scent Vault Item = $70
    Flat shipping = $6.99 (ONCE per non-empty order)
 
-   IMPORTANT:
-   TAX_RATE is intentionally null because the business tax rate
-   has not been configured yet. The UI will show "Pending" rather
-   than inventing a tax amount.
+ 
    ========================================================= */
 
 (() => {
@@ -730,22 +727,22 @@ return {
               VAULT_PRICE
             );
 
-         addItem(
+       addItem(
   {
     id:
-      `never-fold-pro-2-${slugify(color)}`,
+      `vault-${slugify(brand)}`,
 
     name:
-      `Never Fold Pro 2 — ${color}`,
+      brand,
 
     type:
-      "Never Fold Extras",
+      "Scent Vault",
 
     unitPrice:
-      50,
+      price,
 
     quantity:
-      getQty()
+      getQuantity()
   },
   true
 );
@@ -1633,7 +1630,64 @@ function renderCheckout() {
     ],
     totals.subtotal
   );
+/* =========================================
+   PAYMENT METHOD SELECTION
+========================================= */
 
+const paymentButtons =
+  qsa(".payment-method-button");
+
+const paymentMethod =
+  qs("#paymentMethod");
+
+const paymentInstructions =
+  qs("#paymentInstructions");
+
+paymentButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    paymentButtons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    const method =
+      button.dataset.paymentMethod;
+
+    if (paymentMethod) {
+      paymentMethod.value = method;
+    }
+
+    if (!paymentInstructions) return;
+
+    paymentInstructions.hidden = false;
+
+    if (method === "Chime") {
+      paymentInstructions.innerHTML =
+        "<strong>CHIME</strong><br>Send payment to $Demardia-Goss-1";
+    }
+
+    if (method === "Cash App") {
+      paymentInstructions.innerHTML =
+        "<strong>CASH APP</strong><br>Send payment to $Lillie05Anne";
+    }
+
+    if (method === "Apple Pay") {
+      paymentInstructions.innerHTML =
+        "<strong>APPLE PAY</strong><br>Send payment to 9037016851";
+    }
+
+    if (method === "Cash") {
+      paymentInstructions.innerHTML =
+        "<strong>CASH</strong><br>Payment due at pickup.";
+    }
+
+  });
+
+});
+   
   const placeOrderButton =
     first(
       "#placeOrderButton",
@@ -1765,30 +1819,29 @@ deliveryMethod: getFieldValue("#deliveryMethod"),
           normalizeItem
         ),
 
-      subtotal:
-        totals.subtotal,
+     subtotal:
+  totals.subtotal,
 
-      shipping:
-        totals.shipping,
+shipping:
+  getFieldValue("#deliveryMethod") === "shipping"
+    ? SHIPPING_RATE
+    : 0,
 
-      tax:
-        totals.taxConfigured
-          ? totals.tax
-          : null,
+total:
+  totals.subtotal +
+  (
+    getFieldValue("#deliveryMethod") === "shipping"
+      ? SHIPPING_RATE
+      : 0
+  ),
 
-      taxConfigured:
-        totals.taxConfigured,
+paymentMethod:
+  getFieldValue("#paymentMethod"),
 
-      totalBeforeTax:
-        totals.totalBeforeTax,
-
-      total:
-        totals.taxConfigured
-          ? totals.total
-          : totals.totalBeforeTax,
-
-      paymentStatus:
-        "NOT PROCESSED"
+paymentStatus:
+  getFieldValue("#paymentMethod") === "Cash"
+    ? "CASH DUE AT PICKUP"
+    : "PAYMENT INSTRUCTIONS PROVIDED"
     };
   }
 
@@ -1853,33 +1906,41 @@ deliveryMethod: getFieldValue("#deliveryMethod"),
         ".place-order-button"
       );
 
-    /*
-       We are NOT pretending payment happened.
-
-       If the HTML button is disabled because no
-       payment provider is connected, we leave it disabled.
-
-       Once Stripe / Square / PayPal / etc.
-       confirms payment, call:
-
-       NeverFold.completeOrder()
-    */
+  
 
     if (form) {
-      form.addEventListener(
-        "submit",
-        event => {
-          event.preventDefault();
+    form.addEventListener(
+  "submit",
+  event => {
+    event.preventDefault();
 
-          if (
-            button?.disabled
-          ) {
-            return;
-          }
+ const deliveryMethod =
+  getFieldValue("#deliveryMethod");
 
-          saveOrderAndGoToReceipt();
-        }
-      );
+if (!deliveryMethod) {
+  alert("Choose PICKUP or SHIPPING before placing your order.");
+  return;
+}
+
+const paymentMethod =
+  getFieldValue("#paymentMethod");
+
+ if (!paymentMethod) {
+  alert("Choose a payment method before placing your order.");
+  return;
+}
+
+if (
+  paymentMethod === "Cash" &&
+  deliveryMethod !== "pickup"
+) {
+  alert("Cash payment is available for PICKUP orders only.");
+  return;
+}
+
+saveOrderAndGoToReceipt();
+  }
+);  
     }
 
     if (
@@ -1999,20 +2060,7 @@ deliveryMethod: getFieldValue("#deliveryMethod"),
       0
     );
 
-    const taxElement =
-      qs("#receiptTax");
-
-    if (taxElement) {
-      taxElement.textContent =
-        order.taxConfigured &&
-        typeof order.tax ===
-          "number"
-
-          ? money(order.tax)
-
-          : "Pending";
-    }
-
+   
     setMoney(
       "#receiptTotal",
       order.total ||
@@ -2241,17 +2289,5 @@ initExtrasPage();
 
 })();
 
-const demoPayButton =
-  document.querySelector(
-    "#demoPayButton"
-  );
 
-demoPayButton?.addEventListener(
-  "click",
-  () => {
-    alert(
-      "DEMO ONLY — Secure card processing will be connected through Square or Stripe."
-    );
-  }
-);
 
