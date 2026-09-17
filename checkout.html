@@ -685,114 +685,80 @@
 
                 <div class="payment-coming-box">
 
-                   <div class="demo-payment-box">
+    <div class="neverfold-payment-box">
 
-    <div class="demo-payment-header">
-        <strong>CARD PAYMENT</strong>
-        <span>DEMO ONLY</span>
-    </div>
-
-    <p class="demo-payment-note">
-        Secure card payments can be connected through Square or Stripe.
+    <p class="payment-choice-title">
+        CHOOSE PAYMENT METHOD
     </p>
 
-    <label for="demoCardName">
-        NAME ON CARD
-    </label>
+    <div class="payment-method-options">
 
-    <input
-        type="text"
-        id="demoCardName"
-        placeholder="MARDY GOSS"
-        autocomplete="off"
-    >
+        <button
+            type="button"
+            class="payment-method-button"
+            data-payment-method="Chime"
+        >
+            CHIME
+        </button>
 
-    <label for="demoCardNumber">
-        CARD NUMBER
-    </label>
+        <button
+            type="button"
+            class="payment-method-button"
+            data-payment-method="Cash App"
+        >
+            CASH APP
+        </button>
 
-    <input
-        type="text"
-        id="demoCardNumber"
-        placeholder="1234 5678 9012 3456"
-        autocomplete="off"
-    >
+        <button
+            type="button"
+            class="payment-method-button"
+            data-payment-method="Apple Pay"
+        >
+            APPLE PAY
+        </button>
 
-    <div class="demo-card-row">
-
-        <div>
-            <label for="demoExpiration">
-                EXPIRATION
-            </label>
-
-            <input
-                type="text"
-                id="demoExpiration"
-                placeholder="MM / YY"
-                autocomplete="off"
-            >
-        </div>
-
-        <div>
-            <label for="demoCvv">
-                CVV
-            </label>
-
-            <input
-                type="text"
-                id="demoCvv"
-                placeholder="123"
-                autocomplete="off"
-            >
-        </div>
+        <button
+            type="button"
+            class="payment-method-button"
+            data-payment-method="Cash"
+        >
+            CASH
+        </button>
 
     </div>
 
-    <button
-        type="button"
-        class="demo-pay-button"
-        id="demoPayButton"
+    <input
+        type="hidden"
+        id="paymentMethod"
+        name="paymentMethod"
+        value=""
     >
-        PAY SECURELY
-    </button>
 
-    <small class="demo-payment-warning">
-        DEMO ONLY — DO NOT ENTER REAL CARD INFORMATION
-    </small>
+    <div
+        id="paymentInstructions"
+        class="payment-instructions"
+        hidden
+    ></div>
 
 </div>
 
+  <button
+    type="submit"
+    id="placeOrderButton"
+    class="place-order-button"
+>
+    <span>
+        PLACE ORDER
+    </span>
 
-                <!--
-                    DO NOT ENABLE THIS YET.
+    <span>
+        ›
+    </span>
+</button>
 
-                    A REAL PAYMENT PROVIDER MUST CONFIRM
-                    SUCCESSFUL PAYMENT FIRST.
-
-                    AFTER PAYMENT SUCCESS:
-                    window.NeverFold.completeOrder()
-                -->
-
-                <button
-                    type="submit"
-                    id="placeOrderButton"
-                    class="place-order-button"
-                    disabled
-                >
-                    <span>
-                        PLACE ORDER
-                    </span>
-
-                    <span>
-                        🔒
-                    </span>
-                </button>
-
-
-
-                <p class="payment-status-note">
-                    Payment setup required before orders can be submitted.
-                </p>
+<p class="payment-status-note">
+    SELECT A PAYMENT METHOD BEFORE PLACING YOUR ORDER.
+</p>         
 
 
             </section>
