@@ -2222,3 +2222,24 @@ demoPayButton?.addEventListener(
     );
   }
 );
+
+/* =========================================
+   NEVER FOLD PRO 2 — COLOR SELECTION
+========================================= */
+
+const extrasColorButtons =
+    document.querySelectorAll(".extras-color-button");
+
+extrasColorButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        extrasColorButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+    });
+
+});
