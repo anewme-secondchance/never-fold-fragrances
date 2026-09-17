@@ -28,9 +28,9 @@
     --blue-bright: #00a8ff;
     --blue-dark: #003c91;
 
-    --gold: #ffd447;
-    --gold-light: #fff0a3;
-    --gold-dark: #b67d00;
+    --gold: #ffff00;
+    --gold-light: #ffff00;
+    --gold-dark: #ffff00;
 
     --green: #36e567;
     --green-dark: #0a7a32;
@@ -782,13 +782,7 @@ p {
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #fff098 0%,
-            #f0c13c 42%,
-            #c88d08 100%
-        );
+   background: #ffff00;
 
     color: #060606;
 
@@ -1099,12 +1093,7 @@ p {
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffe77d,
-            #d8a117
-        );
+   background: #ffff00;
 
     color: #050505;
 
@@ -1613,12 +1602,7 @@ p {
 
     border-radius: 13px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffe879,
-            #d9a314
-        );
+    background: #ffff00;
 
     color: #050505;
 
@@ -2064,13 +2048,7 @@ p {
 
     border-radius: 13px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffec95,
-            #e4b026 52%,
-            #bd8204 100%
-        );
+    background: #ffff00;
 
     color: #050505;
 
@@ -2761,13 +2739,13 @@ button:disabled,
         1px solid rgba(255, 255, 255, 0.13);
 
     border-radius: 14px;
-
-    background:
-        linear-gradient(
-            180deg,
-            #0c1621,
-            #050a10
-        );
+background:
+    linear-gradient(
+        180deg,
+        #0c1621,
+        #050a10
+    );
+   
 }
 
 
@@ -3110,12 +3088,12 @@ button:disabled,
 
     border-radius: 12px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #0e1822,
-            #070d13
-        );
+background:
+    linear-gradient(
+        180deg,
+        #0e1822,
+        #070d13
+    );
 
     box-shadow:
         0 8px 17px rgba(0, 0, 0, 0.25);
@@ -3355,12 +3333,12 @@ button:disabled,
 
     border-radius: 12px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #0d1721,
-            #070d13
-        );
+ background:
+    linear-gradient(
+        180deg,
+        #0d1721,
+        #070d13
+    );
 
     box-shadow:
         0 7px 15px rgba(0, 0, 0, 0.30);
@@ -3438,12 +3416,7 @@ button:disabled,
 
     border-radius: 10px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffe77b,
-            #d6a014
-        );
+   background: #ffff00;
 
     color: #050505;
 
@@ -3467,12 +3440,12 @@ button:disabled,
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(14, 23, 34, 0.96),
-            rgba(6, 10, 16, 0.98)
-        );
+  background:
+    linear-gradient(
+        180deg,
+        rgba(14, 23, 34, 0.96),
+        rgba(6, 10, 16, 0.98)
+    ); 
 }
 
 
@@ -3626,12 +3599,12 @@ button:disabled,
 
     border-radius: 11px;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(0, 109, 255, 0.17),
-            rgba(2, 8, 15, 0.9)
-        );
+   background:
+    linear-gradient(
+        180deg,
+        rgba(0, 109, 255, 0.17),
+        rgba(2, 8, 15, 0.9)
+    );
 
     color: var(--white);
 
@@ -3766,12 +3739,12 @@ button:disabled,
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(14, 23, 34, 0.96),
-            rgba(6, 10, 16, 0.98)
-        );
+ background:
+    linear-gradient(
+        180deg,
+        rgba(14, 23, 34, 0.96),
+        rgba(6, 10, 16, 0.98)
+    );
 }
 
 
@@ -4187,12 +4160,12 @@ button:disabled,
 
     border-radius: 13px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #0d1721,
-            #060b11
-        );
+ background:
+    linear-gradient(
+        180deg,
+        #0d1721,
+        #060b11
+    );
 }
 
 
@@ -4478,7 +4451,7 @@ button:disabled,
 
 .vault-hero h1 span {
 
-    color: #ffd447;
+ color: #ffff00;
 }
 
 
@@ -4523,7 +4496,7 @@ button:disabled,
 
 .vault-total strong {
 
-    color: #ffd447;
+color: #ffff00;
 
     font-size: 18px;
 }
@@ -4671,7 +4644,7 @@ button:disabled,
     margin:
         0 0 7px;
 
-    color: #ffd447;
+  color: #ffff00;
 
     font-size: 20px;
 
@@ -4699,12 +4672,7 @@ button:disabled,
 
     border-radius: 7px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #101820,
-            #0b1117
-        );
+    background: #ffff00;
 }
 
 
@@ -4751,14 +4719,9 @@ button:disabled,
     border:
         1px solid rgba(255, 212, 71, 0.42);
 
-    background:
-        linear-gradient(
-            135deg,
-            #051d3d,
-            #0a0f15
-        );
+    background: #ffff00;
 
-    color: #ffd447;
+   color: #ffff00;
 
     font-size: 9px;
 
@@ -4822,7 +4785,7 @@ button:disabled,
 
 .vault-price-row strong {
 
-    color: #ffd447;
+   color: #ffff00;
 
     font-size: 18px;
 }
@@ -4869,12 +4832,7 @@ button:disabled,
 
     border-radius: 7px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #fff0a3,
-            #d9a51c
-        );
+  background: #ffff00;  
 
     color: #070707;
 
@@ -5382,13 +5340,7 @@ button:disabled,
     border: 1px solid #fff0a3;
     border-radius: 13px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffec95,
-            #e4b026 52%,
-            #bd8204 100%
-        );
+ background: #ffff00;  
 
     color: #050505;
 
@@ -5435,13 +5387,7 @@ button:disabled,
     border: 1px solid #fff0a3;
     border-radius: 12px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffec95,
-            #e4b026 52%,
-            #bd8204 100%
-        );
+  background: #ffff00;
 
     color: #050505;
 
@@ -5546,14 +5492,8 @@ button:disabled,
     border: 1px solid #fff0a3;
     border-radius: 13px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffec95,
-            #e4b026 52%,
-            #bd8204 100%
-        );
-
+background: #ffff00;
+   
     color: #050505;
     font-size: 12px;
     font-weight: 900;
@@ -5632,4 +5572,31 @@ button:disabled,
     background: #07111c;
     color: #ffd447;
     box-shadow: 0 0 12px rgba(255, 212, 71, 0.45);
+}
+
+/* =========================================
+   NEVER FOLD — FINAL YELLOW COLOR OVERRIDE
+   Gold accents → Bright Yellow
+========================================= */
+
+:root {
+    --gold: #ffff00;
+    --gold-light: #ffff00;
+    --gold-dark: #ffff00;
+}
+
+/* Replace remaining hard-coded gold text/borders */
+.demo-payment-warning {
+    color: #ffff00;
+}
+
+.demo-payment-header span {
+    background: #ffff00;
+}
+
+.extras-color-button:hover,
+.extras-color-button.active {
+    border-color: #ffff00;
+    color: #ffff00;
+    box-shadow: 0 0 12px rgba(255, 255, 0, 0.45);
 }
