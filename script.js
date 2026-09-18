@@ -600,6 +600,19 @@ return {
                 getDisplayedQuantity()
    }
   );
+        const originalText =
+  button.textContent;
+
+button.textContent =
+  "ADDED ✓";
+
+setTimeout(
+  () => {
+    button.textContent =
+      originalText;
+  },
+  900
+);   
         }
       );
     });
@@ -979,6 +992,19 @@ return {
                 getRefillQuantity()
           }
   );  
+      const originalText =
+  button.textContent;
+
+button.textContent =
+  "ADDED ✓";
+
+setTimeout(
+  () => {
+    button.textContent =
+      originalText;
+  },
+  900
+);     
         }
       );
     });
