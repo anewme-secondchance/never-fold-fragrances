@@ -2190,14 +2190,14 @@ add?.addEventListener(
     const color =
       selectedColor.dataset.color;
 
- addItem({
+addItem({
   id: `never-fold-pro-2-${slugify(color)}`,
   name: `Never Fold Pro 2 — ${color}`,
   type: "Never Fold Extras",
   price: 50,
   unitPrice: 50,
   quantity: getQty()
-});
+}, true);
      
       const originalText =
         add.textContent;
