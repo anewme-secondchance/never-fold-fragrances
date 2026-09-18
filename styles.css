@@ -5882,3 +5882,24 @@ background: #ffff00;
     color: #ffffff;
     font-weight: 900;
 }
+
+/* =========================================
+   NEVER FOLD — SCENT DESCRIPTIONS
+========================================= */
+
+.scent-description {
+    margin: 10px 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+.scent-coming-soon {
+    color: #ffff00;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
