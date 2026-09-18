@@ -1547,7 +1547,8 @@ function renderCheckout() {
   const city = qs("#city");
   const state = qs("#state");
   const zip = qs("#zip");
-
+const shippingAddressSection =
+  qs("#shippingAddressSection");
   function updateDelivery(method) {
 
     const shipping =
@@ -1587,6 +1588,11 @@ function renderCheckout() {
 
     const needsAddress =
       method === "shipping";
+     if (shippingAddressSection) {
+  shippingAddressSection.hidden =
+    !needsAddress;
+}
+
 
     [street, city, state, zip]
       .forEach(field => {
