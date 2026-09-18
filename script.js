@@ -598,9 +598,8 @@ return {
 
               quantity:
                 getDisplayedQuantity()
-            },
-            true
-          );
+   }
+  );
         }
       );
     });
@@ -743,10 +742,8 @@ return {
 
     quantity:
       getQuantity()
-  },
-  true
+}
 );
-
           const originalText =
             addButton.textContent;
 
@@ -980,9 +977,8 @@ return {
 
               quantity:
                 getRefillQuantity()
-            },
-            true
-          );
+          }
+  );  
         }
       );
     });
@@ -2197,7 +2193,7 @@ addItem({
   price: 50,
   unitPrice: 50,
   quantity: getQty()
-}, true);
+});
      
       const originalText =
         add.textContent;
