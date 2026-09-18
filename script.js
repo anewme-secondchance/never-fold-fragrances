@@ -2128,23 +2128,21 @@ function initExtrasPage() {
   const add =
     qs(".extras-add-cart", card);
 
-
-   const colorButtons =
-  card.querySelectorAll(".extras-color-button");
+const colorButtons =
+  qsa(".extras-color-button", card);
 
 colorButtons.forEach(button => {
-
-  button.addEventListener("click", function () {
+  button.onclick = function (event) {
+    event.preventDefault();
 
     colorButtons.forEach(btn => {
       btn.classList.remove("active");
     });
 
-    this.classList.add("active");
-
-  });
-
+    button.classList.add("active");
+  };
 });
+  
    
   const getQty = () =>
     clampQuantity(
