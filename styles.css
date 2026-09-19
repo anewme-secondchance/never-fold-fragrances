@@ -6084,3 +6084,8 @@ h6,
 .cart-page small {
     color: #ffffff !important;
 }
+
+/* SCENT CARDS — BOTTLE LABEL WHITE */
+.card-bottom .price small {
+    color: #ffffff !important;
+}
