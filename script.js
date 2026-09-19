@@ -18,7 +18,7 @@
      ========================================================= */
 
   const APP_MODE = "TRIAL"; // TRIAL or FULL
-  const TRIAL_DAYS = 0;
+  const TRIAL_DAYS = 7;
   const INSTALL_KEY = "neverfold_trial_start";
   function getTrialStart() {
     return Number(
