@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Never Fold Fragrances | 7-Day Trial</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="trial-page">
+
+    <div class="trial-brand">
+
+      <h1>TaDie4ENT Custom Apps</h1>
+
+      <h2>
+        Never Fold Fragrances
+        <br>
+        7-Day Custom App Trial
+      </h2>
+
+      <p>
+        Welcome to your custom Never Fold Fragrances app experience.
+      </p>
+
+    </div>
+
+    <div class="price-card">
+
+      <h3>YOUR 7-DAY TRIAL</h3>
+
+      <p>
+        Your trial begins when you press the button below.
+      </p>
+
+      <p>
+        You will have 7 days to use and review your custom business app.
+      </p>
+
+      <p>
+        After the 7-day trial ends, access to the app will be locked until the app is moved to FULL mode.
+      </p>
+
+    </div>
+
+    <h2>TRIAL AGREEMENT</h2>
+
+    <p>
+      By starting the trial, you understand that this is a 7-day trial of the Never Fold Fragrances custom business app.
+    </p>
+
+    <button
+      type="button"
+      onclick="startNeverFoldTrial()"
+    >
+      START MY 7-DAY TRIAL
+    </button>
+
+  </main>
+
+  <script>
+    function startNeverFoldTrial() {
+
+      const key =
+        "neverfold_trial_start";
+
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(
+          key,
+          Date.now().toString()
+        );
+      }
+
+      alert(
+        "🚀 Your Never Fold Fragrances 7-Day Trial Has Started!"
+      );
+
+      window.location.href =
+        "index.html";
+    }
+  </script>
+
+</body>
+
+</html>
