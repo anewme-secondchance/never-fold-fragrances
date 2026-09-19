@@ -6046,3 +6046,41 @@ h6,
         ) border-box !important;
     color: #ffffff !important;
 }
+
+/* =========================================
+   NEVER FOLD — GRAY TEXT TO WHITE
+========================================= */
+
+/* Bottom navigation text */
+.bottom-nav .nav-item,
+.bottom-nav .nav-item span,
+.bottom-nav .nav-icon {
+    color: #ffffff !important;
+}
+
+/* Small product labels like BOTTLE */
+.scent-card small,
+.product-card small,
+.product-price small,
+.price-block small,
+.scent-price small {
+    color: #ffffff !important;
+}
+
+/* Product/detail secondary text */
+.product-meta,
+.product-label,
+.product-detail small,
+.product-info small {
+    color: #ffffff !important;
+}
+
+/* Small secondary wording */
+.extras-page small,
+.refill-page small,
+.vault-page small,
+.contact-page small,
+.checkout-page small,
+.cart-page small {
+    color: #ffffff !important;
+}
