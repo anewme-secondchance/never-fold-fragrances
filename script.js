@@ -114,7 +114,6 @@ function checkTrial() {
   return false;
 }
   const CART_KEY = "neverFoldCart";
-  const CART_KEY = "neverFoldCart";
   const ORDER_KEY = "neverFoldLastOrder";
   const LEGACY_CART_KEY = "cart";
 
