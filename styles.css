@@ -6089,3 +6089,75 @@ h6,
 .card-bottom .price small {
     color: #ffffff !important;
 }
+
+/* =========================================
+   TADIE4ENT — NEVER FOLD 7-DAY TRIAL
+========================================= */
+
+.trial-page {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 22px 70px;
+    background: #020304;
+    color: #ffffff;
+    text-align: center;
+}
+
+.trial-brand {
+    margin-bottom: 45px;
+}
+
+.trial-brand h1 {
+    color: #ffff00;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 16px rgba(255, 255, 0, 0.45);
+}
+
+.trial-page h2 {
+    color: #ffffff;
+    line-height: 1.35;
+    margin: 30px 0 20px;
+}
+
+.trial-page p {
+    color: #ffffff;
+    line-height: 1.7;
+    margin: 0 auto 22px;
+    max-width: 700px;
+}
+
+.trial-page .price-card {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 30px 22px;
+    border: 2px solid #ffff00;
+    border-radius: 22px;
+    background: #06111f;
+    box-shadow: 0 0 20px rgba(0, 109, 255, 0.25);
+}
+
+.trial-page .price-card h3 {
+    color: #ffff00;
+    margin-bottom: 22px;
+}
+
+.trial-page button {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 40px auto 0;
+    padding: 18px 24px;
+    border: 2px solid #ffff00;
+    border-radius: 50px;
+    background: #006dff;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.trial-page button:active {
+    transform: scale(0.98);
+}
