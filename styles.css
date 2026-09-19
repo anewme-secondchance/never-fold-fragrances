@@ -5906,7 +5906,7 @@ background: #ffff00;
 
 .refill-banner,
 .refill-shop-new,
-.product-refill-button, 1px solid var(--gold-line);
+.product-refill-button,
 .finder-result-button,
 .home-contact-button,
 .nf-contact-button {
@@ -5916,19 +5916,11 @@ background: #ffff00;
         linear-gradient(#020407, #020407) padding-box,
         linear-gradient(
             90deg,
-            var(--gold) 0%,
-            var(--gold) 50%,
-            var(--blue-bright) 50%,
-            var(--blue-bright) 100%
+            #ffff00 0%,
+            #ffff00 50%,
+            #00a8ff 50%,
+            #00a8ff 100%
         ) border-box !important;
 
-    color: var(--white) !important;
-}
-
-/* ADD REFILL TO CART — BLACK WITH BRIGHT YELLOW OUTLINE */
-.refill-add-cart {
-    background: #020407 !important;
-    border: 2px solid #ffff00 !important;
     color: #ffffff !important;
-    box-shadow: 0 0 12px rgba(255, 255, 0, 0.35) !important;
 }
