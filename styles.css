@@ -6230,125 +6230,200 @@ h6,
     color: #ffff00;
 }
 
-/* =========================================
-   TADIE4ENT TRIAL AGREEMENT — NEVER FOLD
-   LOGO COLOR THEME
-========================================= */
+/* =================================
+   TaDie4ENT Never Fold Trial Page
+   SAME STYLE AS FOREVER SOLID
+================================= */
 
 .trial-page {
+    max-width: 1000px;
     min-height: 100vh;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 45px 20px 70px;
-    background: #020304;
-    color: #ffffff;
-    text-align: center;
+    margin: auto;
+    padding: 60px 30px;
+
+    background: #050505;
+    color: white;
 }
+
+
+/* LOGO */
 
 .trial-brand {
-    margin-bottom: 45px;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-.trial-brand .tadie-logo {
-    display: block;
-    width: 100%;
-    max-width: 330px;
+.tadie-logo {
+    width: 600px;
+    max-width: 90%;
     height: auto;
-    margin: 0 auto 25px;
+
+    display: block;
+    margin: 0 auto 50px auto;
+
+    filter:
+        drop-shadow(0 0 15px rgba(0,119,255,.35))
+        drop-shadow(0 0 25px rgba(153,0,255,.35));
 }
 
-.trial-brand h2,
-.trial-page > h2 {
-    color: #ffff00 !important;
-    text-shadow:
-        0 0 8px rgba(255, 255, 0, 0.45),
-        0 0 18px rgba(0, 109, 255, 0.35);
+
+/* MAIN LETTER COLORS */
+
+.trial-page h2 {
+    text-align: center;
+    margin: 50px 0 25px;
+    line-height: 1.4;
+
+    background: linear-gradient(
+        90deg,
+        #9b00ff,
+        #00aaff,
+        #00ff66,
+        #ffd700
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
+
+
+/* NORMAL TEXT */
 
 .trial-page p {
-    color: #ffffff;
-    line-height: 1.7;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
+
+
+/* PACKAGE BOXES */
 
 .trial-page .price-card {
     max-width: 700px;
-    margin: 30px auto;
-    padding: 28px 22px;
+    margin: 50px auto;
+    padding: 35px;
 
-    background: #06111f;
+    background: linear-gradient(
+        145deg,
+        rgba(155,0,255,.08),
+        rgba(0,170,255,.05),
+        rgba(0,255,102,.08)
+    );
 
-    border: 2px solid #006dff;
-    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 25px;
 
     box-shadow:
-        0 0 12px rgba(0, 109, 255, 0.35),
-        0 0 22px rgba(255, 255, 0, 0.10);
+        0 0 20px rgba(0,170,255,.15);
 }
+
+
+/* PACKAGE NAMES */
 
 .trial-page .price-card h3 {
-    color: #ffff00 !important;
-    font-size: 21px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 10px rgba(0,170,255,.8);
 }
+
+
+/* PRICES */
 
 .trial-page .price-card h2 {
-    color: #ffffff !important;
-    font-size: 28px;
+    margin: 15px 0;
+    text-align: left;
+
+    background: none;
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+
+    -webkit-text-fill-color: #ffd700;
+
+    color: #ffd700;
+
+    text-shadow:
+        0 0 12px rgba(255,215,0,.6);
 }
+
+
+/* TEXT INSIDE CARDS */
+
+.trial-page .price-card p {
+    color: white;
+    line-height: 2;
+}
+
+
+/* SMALL HEADINGS */
 
 .trial-page .price-card h4 {
-    color: #ffff00 !important;
+    color: #00aaff;
+
+    text-shadow:
+        0 0 8px rgba(0,170,255,.6);
 }
 
-.trial-page .growth-note {
-    max-width: 700px;
-    margin: 35px auto;
-    padding: 18px;
 
-    color: #ffff00 !important;
-
-    border-left: 4px solid #006dff;
-
-    background: #06111f;
-}
+/* START TRIAL BUTTON */
 
 .trial-page button {
     display: block;
-    width: 100%;
-    max-width: 450px;
 
-    margin: 30px auto 5px;
-    padding: 18px 20px;
+    margin: 50px auto;
+    padding: 18px 45px;
 
-    background: #006dff;
+    background: linear-gradient(
+        90deg,
+        #9b00ff,
+        #007bff,
+        #00ff66
+    );
 
-    color: #ffffff !important;
+    color: white;
 
-    border: 2px solid #ffff00;
+    border: none;
     border-radius: 50px;
 
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
 
     cursor: pointer;
 
     box-shadow:
-        0 0 15px rgba(0, 109, 255, 0.45),
-        0 0 10px rgba(255, 255, 0, 0.25);
+        0 0 20px rgba(0,170,255,.7);
 }
 
-.trial-page button:active {
-    transform: scale(0.98);
+.trial-page button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 30px rgba(0,255,102,.9);
 }
 
-.trial-contact {
-    max-width: 700px;
-    margin: 45px auto 0 !important;
-    padding: 25px;
 
-    background: #06111f;
+/* GROWTH NOTE */
 
-    border: 2px solid #ffff00;
-    border-radius: 20px;
+.trial-page .growth-note {
+    color: white;
+    text-align: center;
+}
 
-    color: #ffffff !important;
+
+/* CONTACT */
+
+.trial-page .trial-contact {
+    text-align: center;
+    margin-top: 60px;
+
+    color: #00aaff;
+
+    text-shadow:
+        0 0 10px rgba(0,170,255,.7);
 }
