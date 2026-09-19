@@ -6229,3 +6229,126 @@ h6,
 .trial-powered strong {
     color: #ffff00;
 }
+
+/* =========================================
+   TADIE4ENT TRIAL AGREEMENT — NEVER FOLD
+   LOGO COLOR THEME
+========================================= */
+
+.trial-page {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px 20px 70px;
+    background: #020304;
+    color: #ffffff;
+    text-align: center;
+}
+
+.trial-brand {
+    margin-bottom: 45px;
+}
+
+.trial-brand .tadie-logo {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    margin: 0 auto 25px;
+}
+
+.trial-brand h2,
+.trial-page > h2 {
+    color: #ffff00 !important;
+    text-shadow:
+        0 0 8px rgba(255, 255, 0, 0.45),
+        0 0 18px rgba(0, 109, 255, 0.35);
+}
+
+.trial-page p {
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.trial-page .price-card {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 28px 22px;
+
+    background: #06111f;
+
+    border: 2px solid #006dff;
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 12px rgba(0, 109, 255, 0.35),
+        0 0 22px rgba(255, 255, 0, 0.10);
+}
+
+.trial-page .price-card h3 {
+    color: #ffff00 !important;
+    font-size: 21px;
+}
+
+.trial-page .price-card h2 {
+    color: #ffffff !important;
+    font-size: 28px;
+}
+
+.trial-page .price-card h4 {
+    color: #ffff00 !important;
+}
+
+.trial-page .growth-note {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 18px;
+
+    color: #ffff00 !important;
+
+    border-left: 4px solid #006dff;
+
+    background: #06111f;
+}
+
+.trial-page button {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+
+    margin: 30px auto 5px;
+    padding: 18px 20px;
+
+    background: #006dff;
+
+    color: #ffffff !important;
+
+    border: 2px solid #ffff00;
+    border-radius: 50px;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px rgba(0, 109, 255, 0.45),
+        0 0 10px rgba(255, 255, 0, 0.25);
+}
+
+.trial-page button:active {
+    transform: scale(0.98);
+}
+
+.trial-contact {
+    max-width: 700px;
+    margin: 45px auto 0 !important;
+    padding: 25px;
+
+    background: #06111f;
+
+    border: 2px solid #ffff00;
+    border-radius: 20px;
+
+    color: #ffffff !important;
+}
