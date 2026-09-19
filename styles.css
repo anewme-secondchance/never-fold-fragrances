@@ -5978,3 +5978,11 @@ h6,
     font-size: 12px !important;
     font-family: Arial, Helvetica, sans-serif !important;
 }
+
+/* POWERED BY FOOTER — ALL SAME FONT/SIZE */
+.powered-by,
+.powered-by strong {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
