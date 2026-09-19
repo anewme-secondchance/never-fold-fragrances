@@ -5994,3 +5994,18 @@ h6,
     border-left: 2px solid #006dff;
     border-right: 2px solid #006dff;
 }
+
+/* KEEP POWERED BY AT BOTTOM ABOVE BOTTOM NAV */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app > main {
+    flex: 1;
+}
+
+.powered-by {
+    margin-top: auto;
+}
