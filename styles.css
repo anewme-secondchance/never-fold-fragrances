@@ -6012,3 +6012,11 @@ h6,
     border: 2px solid #006dff;
     border-radius: 16px;
 }
+
+/* REFILLS — BLUE BORDERS */
+.refill-order-section,
+.refill-quantity-section,
+.refill-scent-option {
+    border: 2px solid #006dff !important;
+    border-radius: 16px;
+}
