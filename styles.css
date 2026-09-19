@@ -5972,3 +5972,9 @@ h6,
 .bottom-nav * {
     font-size: revert;
 }
+
+/* REFILL SCENT NAMES — MATCH REGULAR TEXT */
+.refill-scent-option strong {
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
