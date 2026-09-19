@@ -6031,3 +6031,18 @@ h6,
     border: 2px solid #006dff !important;
     border-radius: 16px !important;
 }
+
+/* CONTACT PAGE — SHOP BUTTONS YELLOW + BLUE */
+.contact-shop-button {
+    border: 2px solid transparent !important;
+    background:
+        linear-gradient(#020407, #020407) padding-box,
+        linear-gradient(
+            90deg,
+            #ffff00 0%,
+            #ffff00 50%,
+            #006dff 50%,
+            #006dff 100%
+        ) border-box !important;
+    color: #ffffff !important;
+}
