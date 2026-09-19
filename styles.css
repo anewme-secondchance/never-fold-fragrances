@@ -6161,3 +6161,71 @@ h6,
 .trial-page button:active {
     transform: scale(0.98);
 }
+
+/* =========================================
+   NEVER FOLD — TRIAL ENDED SCREEN
+========================================= */
+
+.trial-screen {
+    min-height: 100vh;
+    background: #020304;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.trial-box {
+    width: 100%;
+    max-width: 650px;
+    background: #06111f;
+    border: 2px solid #ffff00;
+    border-radius: 24px;
+    padding: 40px 25px;
+    box-shadow: 0 0 25px rgba(0, 109, 255, 0.35);
+}
+
+.trial-box h1 {
+    color: #ffff00;
+    margin-bottom: 15px;
+}
+
+.trial-box h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.trial-box p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.trial-buttons {
+    margin: 35px 0;
+}
+
+.trial-contact-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 17px 20px;
+    background: #006dff;
+    color: #ffffff !important;
+    border: 2px solid #ffff00;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.trial-powered {
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+.trial-powered strong {
+    color: #ffff00;
+}
