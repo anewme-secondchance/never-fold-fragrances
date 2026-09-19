@@ -5928,3 +5928,47 @@ background: #ffff00;
 
     color: #ffffff !important;
 }
+
+/* =========================================================
+   NEVER FOLD — REGULAR TEXT SAME SIZE
+   HEADINGS + FOOTERS STAY ALONE
+========================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+small,
+label,
+button,
+input,
+select,
+textarea,
+a,
+span,
+strong {
+    font-size: 12px;
+}
+
+/* KEEP HEADINGS/TITLES THEIR ORIGINAL SIZES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.graffiti-text,
+.stay-scented-text,
+.nf-closing-script,
+.contact-never-fold {
+    font-size: revert;
+}
+
+/* KEEP FOOTER TEXT ITS ORIGINAL SIZE */
+.powered-by,
+.powered-by *,
+.bottom-nav,
+.bottom-nav * {
+    font-size: revert;
+}
