@@ -91,14 +91,28 @@
     `;
   }
 
-  function checkTrial() {
-    if (isTrialExpired()) {
-      showTrialExpired();
-      return true;
-    }
+function checkTrial() {
 
+  if (APP_MODE === "FULL") {
     return false;
   }
+
+  const start = getTrialStart();
+
+  if (!start) {
+    window.location.href =
+      "trial-agreement.html";
+
+    return true;
+  }
+
+  if (isTrialExpired()) {
+    showTrialExpired();
+    return true;
+  }
+
+  return false;
+}
   const CART_KEY = "neverFoldCart";
   const CART_KEY = "neverFoldCart";
   const ORDER_KEY = "neverFoldLastOrder";
