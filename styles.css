@@ -5900,8 +5900,7 @@ background: #ffff00;
 }
 
 /* =========================================================
-   NEVER FOLD — BOTTOM ACTION BOXES
-   YELLOW + BLUE OUTLINE
+   NEVER FOLD — YELLOW + BLUE ACTION BOXES
 ========================================================= */
 
 .refill-banner,
@@ -5909,7 +5908,12 @@ background: #ffff00;
 .product-refill-button,
 .finder-result-button,
 .home-contact-button,
-.nf-contact-button {
+.nf-contact-button,
+.add-cart-button,
+.refill-add-cart,
+.checkout-button,
+.place-order-button,
+.receipt-home-button {
     border: 2px solid transparent !important;
 
     background:
