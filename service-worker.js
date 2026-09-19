@@ -1,4 +1,4 @@
-const CACHE_NAME = "never-fold-v1";
+const CACHE_NAME = "never-fold-v2";
 
 const APP_FILES = [
   "./",
