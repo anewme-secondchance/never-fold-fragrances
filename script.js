@@ -13,7 +13,93 @@
 
 (() => {
   "use strict";
+/* =========================================================
+     TADIE4ENT — NEVER FOLD 7-DAY TRIAL
+     ========================================================= */
 
+  const APP_MODE = "TRIAL"; // TRIAL or FULL
+  const TRIAL_DAYS = 7;
+  const INSTALL_KEY = "neverfold_trial_start";
+  function getTrialStart() {
+    return Number(
+      localStorage.getItem(INSTALL_KEY)
+    ) || 0;
+  }
+
+  function getTrialDaysUsed() {
+    const start = getTrialStart();
+
+    if (!start) {
+      return 0;
+    }
+
+    const elapsed =
+      Date.now() - start;
+
+    return Math.floor(
+      elapsed / (1000 * 60 * 60 * 24)
+    );
+  }
+
+  function isTrialExpired() {
+    if (APP_MODE === "FULL") {
+      return false;
+    }
+
+    const start = getTrialStart();
+
+    if (!start) {
+      return false;
+    }
+
+    return getTrialDaysUsed() >= TRIAL_DAYS;
+  }
+     function showTrialExpired() {
+    document.body.innerHTML = `
+      <div class="trial-screen">
+        <div class="trial-box">
+
+          <h1>TaDie4ENT</h1>
+
+          <h2>Your 7-Day Trial Has Ended</h2>
+
+          <p>
+            Thank you for trying your custom Never Fold Fragrances app.
+          </p>
+
+          <p>
+            Ready to keep your custom business app?
+          </p>
+
+          <div class="trial-buttons">
+
+            <a
+              class="trial-contact-button"
+              href="sms:+19036170239?body=Hi%20TaDasha!%20I'm%20ready%20to%20talk%20about%20keeping%20my%20Never%20Fold%20app."
+            >
+              📱 Contact TaDie4ENT
+            </a>
+
+          </div>
+
+          <p class="trial-powered">
+            Powered by <strong>TaDie4ENT Custom Apps</strong>
+          </p>
+
+        </div>
+      </div>
+    `;
+  }
+
+  function checkTrial() {
+    if (isTrialExpired()) {
+      showTrialExpired();
+      return true;
+    }
+
+    return false;
+  }
+  const CART_KEY = "neverFoldCart";
   const CART_KEY = "neverFoldCart";
   const ORDER_KEY = "neverFoldLastOrder";
   const LEGACY_CART_KEY = "cart";
@@ -2291,6 +2377,9 @@ addItem({
   document.addEventListener(
     "DOMContentLoaded",
     () => {
+           if (checkTrial()) {
+      return;
+    }
       updateCartBadges();
 
       initProductPage();
