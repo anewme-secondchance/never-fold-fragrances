@@ -3,6 +3,7 @@ const CACHE_NAME = "never-fold-v2";
 const APP_FILES = [
   "./",
   "./index.html",
+   "./trial-agreement.html",
   "./styles.css",
   "./script.js",
   "./manifest.json",
