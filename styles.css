@@ -6427,3 +6427,16 @@ h6,
     text-shadow:
         0 0 10px rgba(0,170,255,.7);
 }
+
+
+/* NEVER FOLD — THREE NEW FRAGRANCE PHOTOS */
+
+.fragrance-bottle-image[src$="IMG_MODH.JPG"],
+.fragrance-bottle-image[src$="IMG_KMDG.JPG"],
+.fragrance-bottle-image[src$="IMG_LODV.JPG"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
