@@ -17,8 +17,8 @@
      TADIE4ENT — NEVER FOLD 7-DAY TRIAL
      ========================================================= */
 
-  const APP_MODE = "TRIAL"; // TRIAL or FULL
-  const TRIAL_DAYS = 7;
+const APP_MODE = "FULL"; // TRIAL or FULL
+const TRIAL_DAYS = 7;
   const INSTALL_KEY = "neverfold_trial_start";
   function getTrialStart() {
     return Number(
